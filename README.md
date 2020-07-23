@@ -8,16 +8,16 @@ Happy Coding!
 
 ## Contents
 
-1. [**UX**](#ux) 👨‍💻
-2. [**Goals**](#goals)
-3. [**Structure and Wireframe Mockups**](#structure)
-4. [**Surface**](#surface)
-5. [**Technologies**](#technologies)
-6. [**Features**](#features)
-7. [**Testing**](#testing)
-8. [**Bugs**](#bugs)
-9. [**Deployment**](#deployment)
-10. [**Credits & Acknowledgements**](#credits)
+1. **UX** 👨‍💻
+2. **Goals**
+3. **Structure and Wireframe Mockups**
+4. **Design**
+5. **Technologies**
+6. **Features**
+7. **Testing**
+8. **Bugs**
+9. **Deployment**
+10. **Credits & Acknowledgements**
 
 
 
@@ -57,23 +57,50 @@ The goal of this project is to create a more interactive and specific version of
 
 ## Structure
 
+The site is a scrolling site with 4 sections wjhen viewed on a PC and 6 sections when viewed on a mobile.
+
+## Navigation
+
+### PC 
+
+*First Section*
+- Site title and eyecatching, high quality picture. 
+- Breif description of who I am and my qialifications.
+- Carousel of current events I am doing, with bookable link. 
+
+*Second Section*
+- Section title (Level 4 Pre and Post Natal Specialising Personal Trainer) and eyecatching, high quality picture. 
+- A testimony/ quote about my work or the benfits of Pre and Post Natal Fitness.
+- Using Bootstrap container sections, use 3 columns to divide the sub sections
+1. Outdoor Training 
+Google maps and markers to show the location that I can train women outdoors. Beneath the map, a link to the rates of this service.
+2. Training in your Home
+Have an image of a home and an animation that occurs when you click on the image with an alert box explaining that I can train you in your home. Beneath the image, a link to the rates of this service.
+3.  Training you virtually
+Have an image of me on Facetime/ holding the camera up to my face (taking a selfie) and an animation that occurs when you click on the image with an alert box explaining that I can train you Virtually. Beneath the image, a link to the rates of this service.
+
+*Third Section*
+- Section title (Podcast Host and Guest) and eyecatching, high quality picture. 
+- A breif explanation of my podcasting journey.
+- Using Bootstrap container sections, use 3 columns to divide the sub sections
+1. Links to previous podcasts 
+Breif description of each link
+2. Search bar of topics I have covered 
+Searchbar should have a predictive setting of preset topics and an error/ sorry we couldnt find any reults that match your search function. 
+3.  Podcast related skills 
+Skills i offer such as editing, public speaking coaching and episode concept reviewing. 
+
+*Final Section*
+- Section title (Contact me) eyecatching, high quality picture. 
+- A breif description of how to get in touch.
+- Using Bootstrap container sections, use 2 columns to divide the sub sections
+1. Booking form for sessions 
+Booking form with paypal link so that payment can be made then and there and form sends client confirmation?
+2. registering interest for a podcasting service
+Templated contact form, which service are you interested in (dropdown).
 
 
-## User Requirements and Expectations:
-##### Requirements:
-* Use the navbar to find the relevant information. 
-* Be provided with information on mental health. 
-* If the user decides to proceed to book a consultation, they must agree to terms and conditions first. 
-* Interact with the consultation booking form. 
 
-
-##### Expectations:
-* Information on Charanjit Dosanjh as a professional.
-* responsive site.
-* all links open onto a blank new web page, so that they do not lose their point on the site.
-* Content is aesthetically pleasing. 
-* Navigation takes the user to specific parts of the website.
-* Form Validation works correctly.
 
 ## Design Choices: 🎨
 
