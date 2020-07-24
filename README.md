@@ -104,27 +104,18 @@ Templated contact form, which service are you interested in (dropdown).
 
 ## Design Choices: 🎨
 
-This entire project has been based on the wishes of Charanjit Dosanjh, she wanted a very active role in the design aspect of the project as she felt that it was an extension of her personality and therefore needs to come through in the site.
-She wanted to have a 'warming' colour theme and suggested the colour orange. After looking at some resources such as <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, her suggestion was indeed confirmed as a 'warming' colour! We decided to go with that.
+I wanted the colour scheme of this project to be elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
+I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that light blue had healing associations and it is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/75b9be-a8ccc9-b3d6c6-dceab2-c7d66d-2f4b26'>coolors.com</a> to help me find a fitting colour scheme, incorporating all the emotions i desired.
 
 ##### Fonts: 
-I chose to use the font <a href="https://fonts.googleapis.com/css?family=Roboto&display=swap">ROBERTO</a> as it is very easy to read. Due to the nature of this website, it would have a lot of text and I was eager to ensure it was as palatable as possible. As aforementioned, the focus of the content is to provide an informative yet not overwhelming experience for the potential client, which heavily influenced my decision to choose a font that isn't too ambiguous.
+I chose to use the fonts Lato and Montserrat. After looking at other fitness/ wellness or simply, health websited, i found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
 
 
 ##### Colours:
 Using learned knowledge from prior research, Orange is both bright and warm, bright colours increase the memorability of a site and ultimately drives lead generation and for a site promoting such a personal service, the warmth was a key factor Charanjit was keen to employ. I used the colour picker from Dev tools to help me get as close as I good to the deep orange colour within the logo. 
 
-* Navbar and Footer Colour: #F7B32B <strong>Chinese Yellow</strong> It was a bold move to go with a yellow for the navbar and footer, however, I think it works very well and provides the warmth and emotive expression a site like this intends to draw out from the viewer. 
 
-* Primary: #F89833 <strong> Deep Saffron </strong> This is the colour of the about, approach and rates page. I wanted this to be the primary colour because it is bright, warm and soothing. It is also the background colour for the __introduction to Charanjit__, I wanted the prospective client to associate all of the aforementioned colour attributes with __Chaaranjit__. Additionally, it provides a beautiful gradient from the slightly lighter, Chinese yellow which is the colour of the navbar and footer. Instantly the prospective client is feeling, intrigued, excited and happy. 
 
-* Secondary: #A3B5C6 <strong>Cadet Blue (Crayola) </strong> This is the colour of the help, working together and contact page. I wanted a slightly more serious and focused colour to make it easier for the prospective client to absorb the information. 
-
-* Tertiary: #612100 <strong>Bakers Chocolate </strong> This is the colour for the headings and hovers throughout the page the colour provides calmness, depth and focus. 
-
-* Default text colour: #fafafa <strong>Off-white</strong> I felt this colour sat beautifully on the default background colour, making everything very visible and easy to read. 
-
-<img src="wireframes/colour-scheme-creation.png">
 
 ## Wireframes: 🔧
 I built the wireframes for this project using <a href="https://balsamiq.com/">Balsamiq mockups</a>. Initially, I wrote out, each section of the project/ website and what would be on the page. However, it was tough for me to visualise the slightly different sizing of everything as it moved from the desktop through to mobile and that's where Balsamiq wireframes, became very useful.
