@@ -107,12 +107,15 @@ Templated contact form, which service are you interested in (dropdown).
 I wanted the colour scheme of this project to be elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
 I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that light blue had healing associations and it is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/75b9be-a8ccc9-b3d6c6-dceab2-c7d66d-2f4b26'>coolors.com</a> to help me find a fitting colour scheme, incorporating all the emotions i desired.
 
+##### Logo:
+I used a very helpful <a href="https://studio.tailorbrands.com/business/52878134/wizard/editor?currentId=3400361333&logosStepId=326203893&origBrandVersionId=3400361333&originalIndex=0">tool</a> to create the logo. I beleieved the logo should equally signify the importance of both of the skills i am using the website to advocate. I specifically chose sports looking headphones for the icon image as, they are instantly assiciated with exercise and also audio. 
+
 ##### Fonts: 
 I chose to use the fonts Lato and Montserrat. After looking at other fitness/ wellness or simply, health websited, i found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
 
 
 ##### Colours:
-Using learned knowledge from prior research, Orange is both bright and warm, bright colours increase the memorability of a site and ultimately drives lead generation and for a site promoting such a personal service, the warmth was a key factor Charanjit was keen to employ. I used the colour picker from Dev tools to help me get as close as I good to the deep orange colour within the logo. 
+I wanted the colours to exude health, professionalism and conversation. For this reason i decided on colour scheme 3, because it encapsulated all three aims. and would sit nicely beneath the logo. 
 
 
 
