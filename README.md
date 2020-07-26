@@ -1,6 +1,6 @@
 # PT'n' Podcaster
 
-<img src="assets/img/new-logo.png">
+<img src="assets/logos/logo.jpg">
 
 Thank you for visiting my project, please feel free to read through the Read-me and browse my project, *if you have any questions or suggestions head to my Github contact details.* 
 
