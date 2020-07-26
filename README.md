@@ -1,4 +1,4 @@
-# The Therapy Practice
+# PT'n' Podcaster
 
 <img src="assets/img/new-logo.png">
 
