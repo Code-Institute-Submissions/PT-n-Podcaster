@@ -121,12 +121,78 @@ What makes me such an expert?</h2>
     <div class="container" id="contact">
    <h1 class="title"> Hit me up!
     </h1>
+
+    <div class="col-4 col-sm-6">
     <h2 class="heading"> PT form </h2>
-   <!--Add a booking form for sessions and how many they want etc -->
+  <form>
+  <div class="form-group">
+    <label for="formGroupNameInput">Name</label>
+    <input type="text" class="form-control" id="PtFormName" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="formGroupEmailInput2">Email</label>
+    <input type="email" class="form-control" id= "PtFormName" placeholder="Email">
+  </div>
+    <div class="form-group">
+      <label for="inputSessions">How many sessions would you like to purchase</label>
+      <select id="sessions" class="form-control">
+        <option selected>4</option>
+        <option>8</option>
+        <option>12</option>
+        <option>24</option>
+      </select>
+    </div>
+<!--Add payment option here and link to paypal -->
+</form>
+  
+    </div>
+   
+    <div class="col-4 col-sm-6">
     <h2 class="heading">Podcasting form </h2>
+  <form>
+  <div class="form-group">
+    <label for="formGroupNameInput">Name</label>
+    <input type="text" class="form-control" id="PtFormName" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="formGroupEmailInput2">Email</label>
+    <input type="email" class="form-control" id= "PtFormName" placeholder="Email">
+  </div>
+    <div class="form-group">
+      <label for="inputSessions">What service are you interested in?</label>
+      <select id="sessions" class="form-control">
+        <option selected>Guest for my podcast</option>
+        <!--if this chosen i want a text bok to appear -->
+           <div class="form-group">
+    <label for="formControlTextarea">Please provide a link to your podcast and explain why you would like my input</label>
+    <textarea class="form-control" id="podcastFormTextArea" rows="3"></textarea>
+ 
+    </div>
+        <option>Idea conceptualising</option>
+            <!--if this chosen i want a text bok to appear -->
+           <div class="form-group">
+    <label for="formControlTextarea">What have you got so far?</label>
+    <textarea class="form-control" id="podcastFormTextArea" rows="3"></textarea>
+        <option>Editing support</option>
+        <option>Mentoring for my team and I</option>
+         </div>
+      </select>
+<!--if this chosen i want a text bok to appear -->
+         <div class="form-group">
+    <label for="formControlTextarea">Tell me a little more about what youre looking for</label>
+    <textarea class="form-control" id="podcastFormTextArea" rows="3"></textarea>
+ 
+    </div>
+
+</form>
+    </div>
 <!--form must have dropdown box of what service they want -->
+ <div class="col-4 col-sm-12">
     <h2 class="heading"> anything else form </h2>
-<!--empty template?-->
+ </div>
+     <div class="form-group">
+    <label for="formControlTextarea">If its none of the above, what else can i do you for!</label>
+    <textarea class="form-control" id="podcastFormTextArea" rows="3"></textarea>
 
     </div>
 
