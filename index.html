@@ -85,6 +85,9 @@ What makes me such an expert?</h2>
 
  <p class="paragraph"> During my experience, I have realoised that there is still plenty of anxiety and worry around women exercising whilst pregnant. Equally, the limited information about the benefits of a new mum exercising are also part of the issue. I have put together a short list of some of the Frequently Asked Questions I am hit with all the time! <a href="">Enjoy</a> </p>
 
+<div id="map">
+
+</div>
 <!--add the google maps with markers of where ypu work -->
 
 <!--add the image of a house -->
@@ -134,6 +137,48 @@ What makes me such an expert?</h2>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+    function initMap(){
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center:{
+                lat:51.563054,
+                lng:0.000499
+            }
+        });
+       var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       var locations = [
+           {
+               lat: 51.556491, 
+               lng: -0.157542
+           },
+            {
+               lat: 51.559732, 
+               lng: 0.002795
+           },
+            {
+               lat: 51.531559,  
+               lng: -0.041300
+           },
+          
+       ]; 
+
+       var markers = locations.map(function(location,i ){
+           return new google.maps.Marker({
+               position:location,
+               label: labels[i % labels.length]
+           });
+       });
+var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+    
+    </script>
+     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"></script>
+ <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+   
+    
 </body>
 
 </html>
