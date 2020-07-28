@@ -39,3 +39,10 @@ font-size: 25px;
 font-weight: 300;
    
 }
+
+/* features */
+
+#map{
+position: relative;
+height: 300px;
+}
