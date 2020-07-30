@@ -40,6 +40,14 @@ font-weight: 300;
    
 }
 
+.revealText{
+ font-family:'montserrat';
+font-size: 25px;
+font-weight: 300;
+   
+
+}
+
 /* features */
 
 #map{
