@@ -2,7 +2,7 @@
 
 <img src="assets/logos/logo.jpg">
 
-Thank you for visiting my project, please feel free to read through the Read-me and browse my project, *if you have any questions or suggestions head to my Github contact details.* 
+Thank you for visiting my project. This website is a clear and concise reflection of my career and passion. I am a female only level 4 pre and post natal Personal Trainer and I love podcasting. After founding and hosting the tried it podcast, I went on to launch Mayas minutes and guest on countless other podcasts. I use my social media pretty heavily, but when you are relying on a mass produced algorithm you cannebver really protray the true essence of who you are and what you do, this website is me doing just that!  *if you have any questions or suggestions head to my Github contact details.* 
 
 Happy Coding!
 
@@ -24,11 +24,11 @@ Happy Coding!
 ## UX (User Experience) :control_knobs:
 
 #### User Stories:
-* As a newly pregnant woman eager to get back into fitness, I expect to find information about how experienced my new (potential) Personal Trainer is.. especially as I am pregnant. 
-* As an up and coming podcaster, I want to be inspired by more experience podcasters, I want quick and easy access to their work. 
-* As a new mum with __Diastasis Recti__ (post natal specific core speration), what I am looking for is pretty niche and I just want to book and pay for sessions as soon as possible.  
-* As an experienced podcaster, I want to lighten my load and know if a 'podcaster' has other audio technology related skills. 
-* As a user I want to be able to register my interest in any service quickly and easily. 
+* As a user, I expect to find information about how experienced my new (potential) Personal Trainer is.. __especially as I am pregnant__. 
+* As a user and upcoming podcaster, I want to be inspired by more experienced podcasters, I want _quick and easy access to their work_. 
+* As a user, suffering with __Diastasis Recti__ I just want to _book and pay for sessions as soon as possible_.  
+* As a user, I want to __lighten my load__ and know if a 'podcaster' has _other audio technology related skills_. 
+* As a user I want to be able to _register my interest in any service quickly and easily_. 
 
 #### User Stories (in detail)::open_book:
 
@@ -65,6 +65,7 @@ The goal of this project is to create a more interactive and specific version of
 
 The site is a scrolling site with 4 sections when viewed on a PC and 6 sections when viewed on a mobile. I wanted the site to be both interactive and accessible. 
 
+#####  Colour scheme
 I wanted the colour scheme of this project to be elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
 I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that light blue had healing associations and it is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/75b9be-a8ccc9-b3d6c6-dceab2-c7d66d-2f4b26'>coolors.com</a> to help me find a fitting colour scheme, incorporating all the emotions i desired.
 
