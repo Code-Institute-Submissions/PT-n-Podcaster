@@ -55,54 +55,15 @@ The goal of this project is to create a more interactive and specific version of
 * Display all of my Podcatsing experience in an interactive and easily attainable way. 
 * Insure that the site is aesthetically pleasing. 
 
-## Structure
-
-The site is a scrolling site with 4 sections wjhen viewed on a PC and 6 sections when viewed on a mobile.
-
-## Navigation
-
-### PC 
-
-*First Section*
-- Site title and eyecatching, high quality picture. 
-- Breif description of who I am and my qialifications.
-- Carousel of current events I am doing, with bookable link. 
-
-*Second Section*
-- Section title (Level 4 Pre and Post Natal Specialising Personal Trainer) and eyecatching, high quality picture. 
-- A testimony/ quote about my work or the benfits of Pre and Post Natal Fitness.
-- Using Bootstrap container sections, use 3 columns to divide the sub sections
-1. Outdoor Training 
-Google maps and markers to show the location that I can train women outdoors. Beneath the map, a link to the rates of this service.
-2. Training in your Home
-Have an image of a home and an animation that occurs when you click on the image with an alert box explaining that I can train you in your home. Beneath the image, a link to the rates of this service.
-3.  Training you virtually
-Have an image of me on Facetime/ holding the camera up to my face (taking a selfie) and an animation that occurs when you click on the image with an alert box explaining that I can train you Virtually. Beneath the image, a link to the rates of this service.
-
-*Third Section*
-- Section title (Podcast Host and Guest) and eyecatching, high quality picture. 
-- A breif explanation of my podcasting journey.
-- Using Bootstrap container sections, use 3 columns to divide the sub sections
-1. Links to previous podcasts 
-Breif description of each link
-2. Search bar of topics I have covered 
-Searchbar should have a predictive setting of preset topics and an error/ sorry we couldnt find any reults that match your search function. 
-3.  Podcast related skills 
-Skills i offer such as editing, public speaking coaching and episode concept reviewing. 
-
-*Final Section*
-- Section title (Contact me) eyecatching, high quality picture. 
-- A breif description of how to get in touch.
-- Using Bootstrap container sections, use 2 columns to divide the sub sections
-1. Booking form for sessions 
-Booking form with paypal link so that payment can be made then and there and form sends client confirmation?
-2. registering interest for a podcasting service
-Templated contact form, which service are you interested in (dropdown).
 
 
 
 
 ## Design Choices: 🎨
+
+#####  Structure
+
+The site is a scrolling site with 4 sections when viewed on a PC and 6 sections when viewed on a mobile. I wanted the site to be both interactive and accessible. 
 
 I wanted the colour scheme of this project to be elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
 I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that light blue had healing associations and it is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/75b9be-a8ccc9-b3d6c6-dceab2-c7d66d-2f4b26'>coolors.com</a> to help me find a fitting colour scheme, incorporating all the emotions i desired.
