@@ -64,19 +64,22 @@
 #welcome{
     background-color: #53621c;
     color: #fafafa;
-    padding-top: 10rem;
+    padding-top: 20rem;
 }
 
 #pt{
     background-color: #e1e5f2;
+    padding-top: 10rem;
 }
 
 #podcast{
     background-color: #bfdbf7;
+    padding-top: 10rem;
 }
 
 #contact{
     background-color: #1f7a8c;
+    padding-top: 10rem;
 }
 
 /* special fonts and paragraphs */
