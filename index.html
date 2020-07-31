@@ -7,46 +7,69 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>PT 'n' Podcaster</title>
 </head>
 
 <body>
 
-<header class="container"> 
 
-<img src="assets/logos/logo.jpg" class="img-fluid" >
+ <header class="container-fluid">
+      <div class="row">
+        <div class="sticky-top">
+          <nav class="navbar navbar-expand-lg" id="Navbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
+            <div class="d-none d-sm-none d-lg-block">
+              <a class="navbar-brand" href="#home" aria-label="Home">
+                <img src="assets/logos/logo.jpg" class="img-fluid" ></a>
+            </div>
 
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" aria-label="About">About</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#pt"
+                    aria-label="PT"
+                    >Personal Training</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#podcast" aria-label="Podcast"
+                    >Podcaster</a
+                  >
+                </li>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#welcome">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#pt">PT</a>
-      </li>
-      
-       <li class="nav-item">
-        <a class="nav-link" href="#podcast">Podcasting</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">contact</a>
-      </li>
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-</header>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" aria-label="Contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
 	<div class="container" id="welcome">
     
