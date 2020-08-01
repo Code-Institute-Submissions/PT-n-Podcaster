@@ -103,7 +103,12 @@ font-size: 28px;
 font-weight: 350;
  
 }
-
+.uppercase{
+text-transform: uppercase;
+font-family:'lato';
+font-size: 20px;
+font-weight: 200;
+}
 .paragraph{
  font-family:'montserrat';
 font-size: 25px;
