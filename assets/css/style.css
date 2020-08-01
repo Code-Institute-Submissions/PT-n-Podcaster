@@ -130,3 +130,10 @@ font-weight: 300;
 position: relative;
 height: 300px;
 }
+
+/* footer */
+.hvr-back-pulse{
+color: #fafafa;
+text-decoration: none;
+background-color:transparent;
+}
