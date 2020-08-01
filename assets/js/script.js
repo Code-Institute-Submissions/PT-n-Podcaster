@@ -7,4 +7,10 @@ $(document).ready(function () {
       // out
     }
   );
+
+$().carousel(function(){
+    $(".carousel-item").next(2000);
+
 });
+
+})

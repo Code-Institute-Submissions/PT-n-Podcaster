@@ -131,9 +131,36 @@ position: relative;
 height: 300px;
 }
 
+#carousel-container{
+
+}
+
+.carousel{
+
+}
+
+
+#firstEvent{
+
+}
+
+#secondEvent{
+
+}
+
+#thirdEvent{
+
+}
+
+.carousel-item{
+    
+}
 /* footer */
+.footer a:hover{
+background-color:red;
+}
 .hvr-back-pulse{
 color: #fafafa;
-text-decoration: none;
+text-decoration-color:none;
 background-color:transparent;
 }
