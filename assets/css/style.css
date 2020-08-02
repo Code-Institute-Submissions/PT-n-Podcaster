@@ -191,11 +191,15 @@ width: 200px;
     
 }
 /* footer */
+footer{
+    background-color: #EDF2EF;
+    color: black;
+}
 .footer a:hover{
 background-color:red;
 }
 .hvr-back-pulse{
-color: #fafafa;
+    color: black;
 text-decoration-color:none;
 background-color:transparent;
 }
