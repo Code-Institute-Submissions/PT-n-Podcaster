@@ -1,16 +1,14 @@
 $(document).ready(function () {
-  $("#houseAnimation").hover(function () {
+  $(".house").click(function () {
       // over
-      $(".revealText").slideUp(1000);
-    }, function () {
-      $(".revealText").slideDown(1000);
-      // out
-    }
-  );
+      $(".revealText").fadeIn('slow');
+    });
 
-$().carousel(function(){
-    $(".carousel-item").next(2000);
+  $(".house").click(function () {
+      // over
+      $(".revealText").fadeOut('slow');
+    });
 
 });
 
-})
+
