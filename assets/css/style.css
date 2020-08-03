@@ -22,22 +22,29 @@ height: 60px;
     padding-right: 5rem;
 }
 
-#pt{
+#about{
     background-color: #57C4E5;
     padding-top: 3rem;
     padding-bottom: 3rem;
      color: black;
 }
 
-#podcast{
+#pt{
     background-color: #EDF2EF;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+     color: black;
+}
+
+#podcast{
+    background-color: #57C4E5;
     padding-top: 3rem;
      padding-bottom: 3rem;
       color: black;
 }
 
 #contact{
-    background-color: #57C4E5;
+    background-color: #EDF2EF;
     padding-top: 10rem;
      color: black;
 
@@ -165,7 +172,7 @@ margin: auto;
 
 /* footer */
 footer{
-    background-color: #EDF2EF;
+    background-color: #57C4E5;
     color: black;
 }
 .footer a:hover{
