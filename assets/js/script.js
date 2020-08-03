@@ -1,12 +1,12 @@
 $(document).ready(function () {
   $(".house").click(function () {
       // over
-      $(".revealText").fadeIn('slow');
+      $(".revealText").fadeIn(3000);
     });
 
   $(".house").click(function () {
       // over
-      $(".revealText").fadeOut('slow');
+      $(".revealText").fadeOut();
     });
 
     $("nav").click(function(){
