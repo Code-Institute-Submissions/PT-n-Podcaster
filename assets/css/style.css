@@ -14,6 +14,11 @@ height: 60px;
 .fa-bars{
     color: black;
 }
+
+.sticky-top{
+    position: sticky;
+}
+
 #welcome{
     background-color: #EDF2EF;
     color: black;
