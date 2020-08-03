@@ -9,6 +9,12 @@ $(document).ready(function () {
       $(".revealText").fadeOut('slow');
     });
 
+    $("nav").click(function(){
+        $("ul").toggleClass(dropdown);
+
+    })
+
+
 });
 
 
