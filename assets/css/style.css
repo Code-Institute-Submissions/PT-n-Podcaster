@@ -84,10 +84,15 @@ ul li a:hover{
 
 }
 
+
 #faq{
-     background-image: linear-gradient(5deg,#53621c,#e1e5f2,#bfdbf7,#1f7a8c);
-    padding-top: 10rem;
-    color: black;  
+ background-color:#EDF2EF;   
+ color: black;
+ padding:3rem 3rem 3rem 3rem;
+}
+
+#faq p{
+  padding:1rem 0 1rem 0;  
 }
 
 /* special fonts and paragraphs */
