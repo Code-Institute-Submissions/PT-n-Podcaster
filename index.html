@@ -16,10 +16,24 @@
 </head>
 
 <body>
-<div class="navbar row">
-<nav class="sticky-top"> 
-<button class="btn-nav" data-toggle="collapse" role="button" aria-expanded="false">
-<h1>menu<i class="fas fa-bars"></i></h1>
+<header>  
+<nav class="container-fluid sticky-top">  
+<button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#menuOptions"
+              aria-controls="menuOptions"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fas fa-bars"></i
+              ></span>
+            </button>
+
+<div class="collapse navbar-collapse" id="menuOptions">
+
 <ul class="dropdown">
 <li> <a href="#welcome">Home</a></li>
 <li> <a href="#about">About</a></li>
@@ -27,10 +41,9 @@
 <li> <a href="#podcast">Podcaster</a></li>
 <li> <a href="contact">Get in touch!</a></li>
 </ul>
-</button>
-
-</nav>
 <div>
+</nav>
+</div>
 </header>
 
 
