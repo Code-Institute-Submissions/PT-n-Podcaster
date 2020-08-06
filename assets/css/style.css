@@ -95,6 +95,22 @@ ul li a:hover{
   padding:1rem 0 1rem 0;  
 }
 
+#faq a{
+color: black;
+}
+
+#faq a:hover{
+ background-color: yellow;
+ text-decoration: none;
+ 
+}
+
+.baby{
+    height: 300px;
+    width: 500px;
+    padding: .5rem 0 .5rem 0rem;
+   align-items: center;
+}
 /* special fonts and paragraphs */
 
 .title{
@@ -147,6 +163,9 @@ display: none;
 
 }
 
+.blockquote-footer{
+    color: black;
+}
 /* features */
 
 #map{
