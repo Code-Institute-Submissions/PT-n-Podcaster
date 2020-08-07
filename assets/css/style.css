@@ -57,7 +57,7 @@ ul li a:hover{
 }
 
 #about{
-    background-color: #57C4E5;
+    background-color: white;
     padding-top: 3rem;
     padding-bottom: 3rem;
      color: black;
@@ -81,7 +81,7 @@ ul li a:hover{
 }
 
 #podcast{
-    background-color: #57C4E5;
+    background-color: white;
     padding-top: 3rem;
      padding-bottom: 3rem;
       color: black;
@@ -186,8 +186,8 @@ height: 300px;
 }
 
 .tried{
-   height: 200px;
-width: 200px; 
+   height: 400pxpx;
+width: 500px; 
 }
 
 .galleryContainer{
