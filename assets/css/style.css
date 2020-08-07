@@ -295,13 +295,25 @@ width: 100%;
 margin: auto;
 }
 
+.outdoor{
+    height: 300px;
+width: 100%; 
+
+margin: auto;
+}
 /* footer */
 footer{
     background-color: #57C4E5;
     color: black;
 }
-.footer a:hover{
-background-color:red;
+
+footer a{
+    color: black;
+    cursor: pointer;
+}
+
+footer a:hover{
+color: grey;
 }
 .hvr-back-pulse{
     color: black;
