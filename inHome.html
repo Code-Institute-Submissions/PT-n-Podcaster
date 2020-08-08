@@ -7,20 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_OY8JUjhzaW7lM0cybGhC9");
-     
-   })();
-</script>
       <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>PT 'n' Podcaster</title>
 </head>
@@ -45,8 +35,8 @@
 <div  class="dropdown" id="menuOptions">
 
 <ul class="dropdown-menu">
-<li> <a href="index.html">Home</a></li>
-<li> <a href="index.html">About</a></li>
+<li> <a href="#welcome">Home</a></li>
+<li> <a href="#about">About</a></li>
 <li> <a href="#pt">PT</a></li>
 <li> <a href="#podcast">Podcaster</a></li>
 <li> <a href="#contact">Get in touch!</a></li>
@@ -56,80 +46,13 @@
 </div>
 </header>
 
-
-<div class="container-fluid">
-
-<div class="row">
-
-<div class="col-12">
-<h1 class="title"> Outdoor Training</h1>
-</div>
-</div>
-
+<div class="container-fluid" id="inHome">
 <div class="row">
 <div class="col-6">
-<div class="col-12">
-<h2 class="heading">Locations</h1>
-</div>
-<p class="paragraph">
-Click on the markers on the map to have a look at the locations I can train you.</p>
-</div>
-
-<div id="map" class="col-6">
-
 
 </div>
 </div>
-
-<div class="row">
-<div class="col-6 ptForm">
-    <h2 class="heading"> PT form </h2>
-   <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send PT Enquiry</button>
-                </form>
-  </div>
- 
- <!--Add payment option here and link to paypal -->
-
-<div class="col-6 ptRates">
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Session Pack</th>
-      <th scope="col">Cost</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">4 sessions</th>
-      <td>£220</td>
-    </tr>
-
-     <th scope="row">8 sessions</th>
-      <td>£420</td>
-    </tr>
-
-     <th scope="row">12 sessions</th>
-      <td>£570</td>
-    </tr>
-
-     <th scope="row">24 sessions</th>
-      <td>£1068</td>
-    </tr>
-  
-  </tbody>
-</table>
-
-
-
 </div>
-    </div>
-</div>
-
-
 
    
  <footer class="container-fluid">
@@ -170,7 +93,6 @@ Click on the markers on the map to have a look at the locations I can train you.
 </div>
       </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
@@ -184,7 +106,6 @@ Click on the markers on the map to have a look at the locations I can train you.
    
    <script src="assets/js/maps.js"></script>
    <script src="assets/js/script.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
     
 </body>
 
