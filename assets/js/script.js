@@ -23,19 +23,15 @@ $("#outside-container").mouseleave(function(){
     
 });
 
-$("#virtual-container").mouseenter(function(){
+$(".virtual-container").mouseenter(function(){
     $(".virtual").fadeTo(1000,0.15);
     $(".facetime").show();
 });
 
-$("#virtual-container").mouseleave(function(){
+$(".virtual-container").mouseleave(function(){
+     $(".facetime").hide();
     $(".virtual").fadeTo(1000,1);
-    $(".facetime").hide();
+   
 });
-
-$(".mayaImg").mouseenter(function(){
-    $(".mayaImg").fadeTo(1000, 0.15);
-    
-})
 
  });
