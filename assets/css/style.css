@@ -102,6 +102,15 @@ ul li a:hover{
       color: black;
 }
 
+.checked {
+    color: orange;
+   
+}
+
+.reviews{
+     font-size:40px;
+     cursor:pointer;
+}
 #contact{
     background-color: #EDF2EF;
     padding-top: 10rem;
