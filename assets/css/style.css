@@ -45,7 +45,10 @@ ul li a:hover{
 .sticky-top{
     position: sticky;
 }
-
+.logo{
+    height:100px;
+    width:100px;
+}
 /* pages */
 
 #welcome{
