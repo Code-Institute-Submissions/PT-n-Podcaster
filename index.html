@@ -1,317 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-      <link
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-	<link rel="stylesheet" href="assets/css/style.css">
-	<title>PT 'n' Podcaster</title>
-</head>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    >
+    <link rel="stylesheet" href="assets/css/style.css" >
+    <title>PT 'n' Podcaster</title>
+  </head>
 
-<body>
-<header>  
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-  <a class="navbar-brand" href="#welcome"><img src="assets/logos/logo.png" alt="logo" class="logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" >
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#welcome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Home <span class="sr-only"></span></a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#about">About</a>
-         </div>
-      </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#pt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PT
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="outdoor.html">Outdoor PT</a>
-          <a class="dropdown-item" href="inHome.html">In Home PT</a>
-          <a class="dropdown-item" href="virtual.html">Virtual PT</a>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="index.html"
+          ><img src="assets/logos/logo.png" alt="logo" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Home <span class="sr-only"></span
+              ></a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="about.html">About</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PT
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="outdoor.html">Outdoor PT</a>
+                <a class="dropdown-item" href="inHome.html">In Home PT</a>
+                <a class="dropdown-item" href="virtual.html">Virtual PT</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#podcast">Podcaster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in touch</a>
+            </li>
+          </ul>
         </div>
-      </li>
+      </nav>
+    </header>
+    <div class="container-fluid" id="welcome">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">PT 'n' Podcaster</h1>
+          <div class="col-12">
+            <h1 class="special-head">Listen to me while you train</h1>
+          </div>
+        </div>
+      </div>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#podcast">Podcaster</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Get in touch</a>
-      </li>
-    
-    </ul>
-  </div>
-</nav>
-
-</header>
-	<div class="container-fluid" id="welcome">
-    
-    <div class="row">
-    <div class="col-12">
-    <h1 class="title"> PT 'n' Podcaster </h1>
-    <div class="col-12">
-    <h1 class="special-head"> Listen to me while you train </h1>
-    </div>
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col-12">
-    <p class="special-para"> I am a Level 4 Pre and post natal qualified Personal Trainer. I am also VERY passionate about using my voices to help all women, women of colour in particular, to start taking up space. This incessant need to help women become healthier and heard.. has led me to becoming a PT n Podcaster! </p>
-    </div>
-    
-    </div>
-	</div>
-    
-
-  
-	<div class="container-fluid" id="pt">
-
-    <div class="row">
-
-    <div class="col-6">
-    <div class="col-12">
-    <h1 class="heading"> PT </h1>
-    </div>
-    </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="special-para">
+            I am a Level 4 Pre and post natal qualified Personal Trainer. I am
+            also VERY passionate about using my voices to help all women, women
+            of colour in particular, to start taking up space. This incessant
+            need to help women become healthier and heard.. has led me to
+            becoming a PT n Podcaster!
+          </p>
+        </div>
+      </div>
     </div>
 
-   <div class="row">
-   <div class="col-12">
-    <blockquote class="blockquote text-center">
-  <p class="mb-0">Getting back in to exercise after giving birth is daunting, so having someone who i immediately felt at ease with, is so supportive and relaxed around my baby has been JUST fantastic.</p>
-  <footer class="blockquote-footer"> Alex Greierson <cite title="Source Title">AKA @themummyhustle</cite></footer>
-</blockquote>
-   </div>
-   </div>
-    
-    <div class="row">
-    <div class="col-6">
-<div class="col-12">
-<h1 class="heading"> Services I offer </h1>
-</div>
+    <div class="container-fluid" id="pt">
+      <div class="row">
+        <div class="col-6">
+          <div class="col-12">
+            <h1 class="heading">PT</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">
+              Getting back in to exercise after giving birth is daunting, so
+              having someone who i immediately felt at ease with, is so
+              supportive and relaxed around my baby has been JUST fantastic.
+            </p>
+            <footer class="blockquote-footer">
+              Alex Greierson
+              <cite title="Source Title">AKA @themummyhustle</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="col-12">
+            <h1 class="heading">Services I offer</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="col-12">
+            <h1>Outdoor Training</h1>
+          </div>
+          <div id="outside-container">
+            <img src="assets/img/outdoor.jpeg" class="outdoor" />
+            <div class="text-container">
+              <p class="revealText outside">
+                click <a href="outdoor.html" target="_blank">here </a> find the
+                locations I can train you outside!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="home-training" class="col-4">
+          <div class="col-12">
+            <h1>In home training</h1>
+          </div>
+          <div id="house-container">
+            <img
+              src="assets/img/inHome.jpeg"
+              class="img-fluid house"
+              alt="house"
+            />
+            <div class="text-container">
+              <p class="revealText inside">
+                I know how tough it can be when youre expecting, or more
+                importantly.. when the little one arrives! I can come to your
+                home and train you there! click
+                <a href="inHome.html" target="_blank">here </a> for rates and
+                booking form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="virtual-training" class="col-4">
+          <div class="col-12">
+            <h1>Virtual training</h1>
+          </div>
+          <div class="virtual-container">
+            <img
+              src="assets/img/facetime.jpg"
+              class="img-fluid virtual"
+              alt="virtual training"
+            />
+            <div class="text-container">
+              <p class="revealText facetime">
+                I even carry out sessions straight to your home or wherever you
+                are. All about minimising obstacles. Click
+                <a href="virtual.html" target="_blank">here </a> for rates and
+                booking form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="container-fluid" id="podcast">
+      <div class="row">
+        <div class="col-6">
+          <div class="col-12">
+            <h1 class="heading">Podcaster</h1>
+          </div>
+          <p>
+            My podcasting journey began when I founded the tried it podcast, I
+            loved speaking on things I really cared about and getting feedback
+            from other girls who looked like me and could relate to my
+            experiences. I felt like I was becoming the representation I would
+            have loved to see when I was growing up. Eventually, I was asked to
+            be a guest on other podcasts! This was even more invigorating,
+            because it had meant that people had recognised what i do and
+            thought it was so great that they wanted to put it on their
+            platforms and my poersoctive on things was reaching a wider range of
+            people. THEN, Tried It Podcast came to an end, I was heartbroken
+            because i thought that this meant that was it for me and
+            podcasting.. but NO. I realsied that Podcasting was a true and pure
+            passion of mine. I needed to continue at all costs!! I started my
+            own podcast Mayas minutes and conitued popping up on other peoples'
+            episodes. Podcasting empowered me and whilst i had no trouble
+            finding or using my voice.. the actual production was very daunting
+            to me.. so whether you want a guest, a host, a soundboard for your
+            ideas, editing advice and support or just an ear to listen, im your
+            girl. Im offering these services, because Podcasting has given me so
+            much joy, but so many times I nearly gave up because of all the
+            little niggly bits in between, I am trying to be the person to
+            minimse those obstacles for you so that you can get to your end
+            podcast faster!
+          </p>
+        </div>
+
+        <div class="col-6">
+          <div class="col-12">
+            <h1 class="heading">Podcasts</h1>
+          </div>
+          <img src="assets/img/tried.jpg" class="tried" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2 class="heading">Top Picks</h2>
+        </div>
+        <p class="paragraph">
+          These are some of my favourite episodes, please feel free to have a
+          watch and listen and leave a review
+        </p>
+
+        <div class="topPicks col-4">
+          <iframe
+            id="gszZBlD6Z9Y"
+            src="https://www.youtube.com/embed/gszZBlD6Z9Y"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="topPicks col-4">
+          <iframe
+            id="FSAEDq3quwk"
+            src="https://www.youtube.com/embed/FSAEDq3quwk"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="topPicks col-4" id="36SsRhdCCi0">
+          <iframe
+            src="https://www.youtube.com/embed/36SsRhdCCi0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+
+        <div class="reviews col-12">
+        
+          <span id="1one" class="fa fa-star checked"></span>
+          <span id="2one" class="fa fa-star empty"></span>
+          <span id="3one" class="fa fa-star empty"></span>
+          <span id="4one" class="fa fa-star empty"></span>
+          <span id="5one" class="fa fa-star empty"></span>
+          <br />
+
+          <textarea
+            style="margin-top: 5px;"
+            class="form-control"
+            rows="3"
+            id="comment"
+            placeholder="Enter your review"
+          ></textarea>
+
+          <button
+            onclick="result()"
+            type="button"
+            style="margin-top: 10px; margin-left: 5px;"
+            class="btn btn-lg btn-success"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <input
+            type="text"
+            id="topicSearch"
+            onkeyup="myFunction()"
+            placeholder="Search for some of the topics I have discussed"
+          /><span class="searchIcon"><i class="fas fa-search"></i></span>
+
+          <ul id="searchBar">
+            <li>
+              <a
+                href="https://podcasts.apple.com/gb/podcast/ep-48-b-l-a-c-k/id1438261984?i=1000452972982"
+                target="_blank"
+                >Racism</a
+              >
+            </li>
+            <li><a href="#" target="_blank">Colourism</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/tv/CC_vPN4gT1h/?igshid=1xqvfvvm3jyie"
+                target="_blank"
+                >White Privilege</a
+              >
+            </li>
+
+            <li><a href="#" target="_blank">Misogyny</a></li>
+            <li><a href="#" target="_blank">Transgenderism</a></li>
+            <li><a href="#" target="_blank">Rape Culture</a></li>
+
+            <li><a href="#" target="_blank">Corona Virus</a></li>
+            <li><a href="#" target="_blank">Corona Virus whilst BAME</a></li>
+            <li><a href="#" target="_blank">Brexit</a></li>
+
+            <li><a href="#" target="_blank">My formative years</a></li>
+            <li><a href="#" target="_blank">Upbringing</a></li>
+            <li><a href="#" target="_blank">Mental Health</a></li>
+          </ul>
+        </div>
+        <!--Add search bar of all my topics?-->
+
+        <div class="col-6 ptForm">
+          <h2 class="heading">Podcast form</h2>
+          <form onsubmit="return sendMail(this);">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="fullname"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="emailaddress"
+              class="form-control"
+              id="emailaddress"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              rows="5"
+              name="projectsummary"
+              class="form-control"
+              id="projectsummary"
+              placeholder="Editing Enquiry"
+              required
+            ></textarea>
+            <textarea
+              rows="5"
+              name="projectsummary"
+              class="form-control"
+              id="projectsummary"
+              placeholder="Guest Enquiry"
+              required
+            ></textarea>
+            <textarea
+              rows="5"
+              name="projectsummary"
+              class="form-control"
+              id="projectsummary"
+              placeholder="Mentoring Enquiry"
+              required
+            ></textarea>
+            <textarea
+              rows="5"
+              name="projectsummary"
+              class="form-control"
+              id="projectsummary"
+              placeholder="Other Enquiry"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-secondary center-block">
+              Send Podcast Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-
-<div class="row">
-<div class="col-4"> 
-<div class="col-12">
-<h1> Outdoor Training</h1>
-</div>
-<div id="outside-container">
-<img src="assets/img/outdoor.jpeg" class="outdoor">
-<div class="text-container">
-<p class="revealText outside"> click <a href="outdoor.html" target="_blank">here </a> find the locations I can train you outside! </p>
-</div>
-</div>
-</div>
-
-<div id="home-training" class="col-4"> 
-<div class="col-12">
-<h1> In home training </h1>
-</div>
-<div id="house-container">
-<img src="assets/img/inHome.jpeg"  class="img-fluid house" alt="house">
-<div class="text-container">
-<p class="revealText inside"> I know how tough it can be when youre expecting, or more importantly.. when the little one arrives! I can come to your home and train you there! click <a href="inHome.html" target="_blank">here </a> for rates and booking form.  </p>
-</div>
-</div>
-</div>
-
-<div id="virtual-training" class="col-4"> 
-<div class="col-12">
-<h1> Virtual training </h1>
-</div>
-<div class="virtual-container">
-<img src="assets/img/facetime.jpg" class="img-fluid virtual" alt="virtual training">
-<div class="text-container">
-<p class="revealText facetime"> I even carry out sessions straight to your home or wherever you are. All about minimising obstacles. Click <a href="virtual.html" target="_blank">here </a> for rates and booking form.</p>
-
-</div>
-</div>
-
-</div>
-	
-</div>
-	</div>
-
-	<div class="container-fluid" id="podcast">
-    <div class="row">
-
-<div class="col-6">
-    <div class="col-12">
-    <h1 class="heading"> Podcaster </h1>
-    </div>
-    <p>
-    My podcasting journey began when I founded the tried it podcast, I loved speaking on things I really cared about and getting feedback from other girls who looked like me and could relate to my experiences. I felt like I was becoming the representation I would have loved to see when I was growing up. 
-
-    Eventually, I was asked to be a guest on other podcasts! This was even more invigorating, because it had meant that people had recognised what i do and thought it was so great that they wanted to put it on their platforms and my poersoctive on things was reaching a wider range of people. 
-
-    THEN, Tried It Podcast came to an end, I was heartbroken because i thought that this meant that was it for me and podcasting.. but NO.
-
-    I realsied that Podcasting was a true and pure passion of mine. I needed to continue at all costs!! I started my own podcast Mayas minutes and conitued popping up on other peoples' episodes. 
-
-    Podcasting empowered me and whilst i had no trouble finding or using my voice.. the actual production was very daunting to me.. so whether you want a guest, a host, a soundboard for your ideas, editing advice and support or just an ear to listen, im your girl. Im offering these services, because Podcasting has given me so much joy, but so many times I nearly gave up because of all the little niggly bits in between, I am trying to be the person to minimse those obstacles for you so that you can get to your end podcast faster! 
-    </p>
-    </div>
-
-    <div class="col-6">
-    <div class="col-12">
-    <h1 class="heading"> Podcasts </h1>
-    </div>
-    <img src="assets/img/tried.jpg" class="tried">
-    </div>
-    </div>
-
-<div class="row">
-<div class="col-12">
-<h2 class="heading"> Top Picks </h2>
-</div>
-<p class="paragraph"> These are some of my favourite episodes, please feel free to have a watch and listen and leave a review</p>
-
-<div class="topPicks col-4">
-<iframe id="gszZBlD6Z9Y" src="https://www.youtube.com/embed/gszZBlD6Z9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="topPicks col-4">
-<iframe id="FSAEDq3quwk" src="https://www.youtube.com/embed/FSAEDq3quwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="topPicks col-4" id="36SsRhdCCi0">
-<iframe  src="https://www.youtube.com/embed/36SsRhdCCi0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-</div>
-
-<div class="reviews col-12">
-
-<span  id="1one"   class="fa fa-star checked"></span>
-<span id="2one"  class="fa fa-star"></span>
-<span id="3one"   class="fa fa-star"></span>
-<span  id="4one"  class="fa fa-star"></span>
-<span id="5one"   class="fa fa-star"></span>
-<br/>
-
-<textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Enter your review"></textarea>
-
-<button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">Submit</button>
-</div>
-</div>
-
-<div class="row">
-<div class="col-6">
-<input type="text" id="topicSearch" onkeyup="myFunction()" placeholder="Search for some of the topics I have discussed"><span class="searchIcon"><i class="fas fa-search"></i></span>
-
-<ul id="searchBar">
-  <li><a href="https://podcasts.apple.com/gb/podcast/ep-48-b-l-a-c-k/id1438261984?i=1000452972982" target="_blank">Racism</a></li>
-  <li><a href="#" target="_blank">Colourism</a></li>
-  <li><a href="https://www.instagram.com/tv/CC_vPN4gT1h/?igshid=1xqvfvvm3jyie" target="_blank">White Privilege</a></li>
-
-  <li><a href="#" target="_blank">Misogyny</a></li>
-  <li><a href="#" target="_blank">Transgenderism</a></li>
-  <li><a href="#" target="_blank">Rape Culture</a></li>
-
-  <li><a href="#" target="_blank">Corona Virus</a></li>
-  <li><a href="#" target="_blank">Corona Virus whilst BAME</a></li>
-  <li><a href="#" target="_blank">Brexit</a></li>
-
-  <li><a href="#" target="_blank">My formative years</a></li>
-   <li><a href="#" target="_blank">Upbringing</a></li>
-  <li><a href="#" target="_blank">Mental Health</a></li>
-</ul>
-
-</div>
-     <!--Add search bar of all my topics?-->
-
-<div class="col-6 ptForm">
-    <h2 class="heading"> Podcast form </h2>
-   <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Editing Enquiry" required></textarea>
-                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Guest Enquiry" required></textarea>
-                      <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Mentoring Enquiry" required></textarea>
-                       <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Other Enquiry" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Podcast Enquiry</button>
-                </form>
-  </div>
-  	</div>
-      	</div>
 
     <div class="container-fluid" id="contact">
-    <div class="row">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">Hit me up!</h1>
+        </div>
 
-  <div class="col-12">
-   <h1 class="title"> Hit me up!
-    </h1>
-  </div>
-    
- <div class="col-6">
-    <p> I also do a bunch of other stuff ALL the time, heres what ive got on this month! 
-    </p>
-    <div>
-  
- <footer class="container-fluid">
+        <div class="col-6">
+          <p>
+            I also do a bunch of other stuff ALL the time, heres what ive got on
+            this month!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid">
       <div class="row">
         <div class="col-4">
           <h5 class="uppercase">PT Terms and Conditions</h5>
-           <p>
-            Before booking sessions you are required to agree to the terms
-            and conditions.
+          <p>
+            Before booking sessions you are required to agree to the terms and
+            conditions.
           </p>
 
-            <div class="col-12">
-        <a href="terms.html"
-            target="_blank"
-            class="footer"
-            aria-label="Terms and conditions">
-        
-            <i class="fa fa-download" aria-hidden="true"
-              ><span class="sr-only">Click here to have a read</span></i></a>
-            </div>
-             </div>
-
-        <div class="col-4">
-        <h5 class="uppercase">
-          Stay connected</h5>
-         <div class="col-12">
- <a href="https://www.instagram.com/mayasaffronhan/" target="_blank" class="footer" aria-label="instagram">
- <i class="fab fa-instagram"></i></a>
- </div>
+          <div class="col-12">
+            <a
+              href="terms.html"
+              target="_blank"
+              class="footer"
+              aria-label="Terms and conditions"
+            >
+              <i class="fa fa-download" aria-hidden="true"
+                ><span class="sr-only">Click here to have a read</span></i
+              ></a
+            >
+          </div>
         </div>
 
         <div class="col-4">
-        <h5 class="uppercase">Stay entertained</h5>
+          <h5 class="uppercase">
+            Stay connected
+          </h5>
           <div class="col-12">
-           <a href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber" target="_blank" class="footer" aria-label="youtube channel"><i class="fab fa-youtube"></i>
-           </a>
-      </div>
-</div>
+            <a
+              href="https://www.instagram.com/mayasaffronhan/"
+              target="_blank"
+              class="footer"
+              aria-label="instagram"
+            >
+              <i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h5 class="uppercase">Stay entertained</h5>
+          <div class="col-12">
+            <a
+              href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber"
+              target="_blank"
+              class="footer"
+              aria-label="youtube channel"
+              ><i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
- 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-    
-     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"></script>
- <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-   
-   <script src="assets/js/maps.js"></script>
-   <script src="assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-    
-</body>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"
+    ></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

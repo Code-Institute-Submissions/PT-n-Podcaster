@@ -94,7 +94,7 @@ Click on the markers on the map to have a look at the locations I can train you.
 <div class="row">
 <div class="col-6 ptForm">
     <h2 class="heading"> PT form </h2>
-   <form onsubmit="return sendMail(this);">
+   <form onsubmit="sendPtFormMail(this); return false;">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
