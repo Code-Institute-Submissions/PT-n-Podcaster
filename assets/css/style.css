@@ -403,6 +403,12 @@ height: 300px;
 width: 100%;
 margin: auto;
 }
+
+.remoteExercise{
+ height: 450px;
+width: 100%;
+margin: auto;   
+}
 /* footer */
 footer{
     background-color: #57C4E5;
