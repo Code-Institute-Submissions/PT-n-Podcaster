@@ -8,7 +8,9 @@ function sendPtFormMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
-        alert('Thank you');
+       $('#emailModal').modal({
+  keyboard: false
+})
       },
       function (error) {
         console.log("FAILED", error);

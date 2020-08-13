@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("#house-container").mouseover(function () {
-    $(".house").fadeTo(1000, 0.15);
+    $(".house").fadeTo("medium", 0.15);
     $(".inside").show();
   });
 
@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
 
   $("#outside-container").mouseover(function () {
-    $(".outdoor").fadeTo(1000, 0.15);
+    $(".outdoor").fadeTo("medium", 0.15);
     $(".outside").show();
   });
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
   });
 
   $(".virtual-container").mouseover(function () {
-    $(".virtual").fadeTo(1000, 0.15);
+    $(".virtual").fadeTo("medium", 0.15);
     $(".facetime").show();
   });
 
