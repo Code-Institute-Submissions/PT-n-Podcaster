@@ -28,98 +28,87 @@ $(document).ready(function () {
     $(".facetime").hide();
     $(".virtual").fadeTo(1000, 1);
   });
+//i want the text to go onto the photo
+$(".remoteContainer").mouseover(function(){
+    $(".remote").slideDown("slow");
+});
+$(".remoteContainer").mouseleave(function(){
+    $(".remote").slideUp("slow");
+});
+//not working
 
-  $("#2one").mouseover(function () {
-    $("#2one").css("color", "orange");
-  });
-
-    $("#2one").mouseleave(function () {
-    $("#2one").css("color", "black");
-  });
-
-    $("#3one").mouseover(function () {
-    $("#2one").css("color", "orange");  
-    $("#3one").css("color", "orange");
-  });
-
-    $("#3one").mouseleave(function () {
-    $("#2one").css("color", "black");
-    $("#3one").css("color", "black");
-  });
-
-    $("#4one").mouseover(function () {
-    $("#2one").css("color", "orange");  
-    $("#3one").css("color", "orange");
-    $("#4one").css("color", "orange");
-  });
-
-    $("#4one").mouseleave(function () {
-    $("#4one").css("color", "black");
-    $("#2one").css("color", "black");
-    $("#3one").css("color", "black");
-  });
-
-    $("#5one").mouseover(function () {
-    $("#5one").css("color", "orange");
-    $("#2one").css("color", "orange");  
-    $("#3one").css("color", "orange");
-    $("#4one").css("color", "orange");
-  });
-
-    $("#5one").mouseleave(function () {
-    $("#5one").css("color", "black");
-     $("#4one").css("color", "black");
-    $("#2one").css("color", "black");
-    $("#3one").css("color", "black");
-  });
+const starRating=document.getElementById("starRatings").children;
+    for(let i=0; i<starRating.length; i++){
+        starRating[i].addEventListener("mouseover",function(){
+            //console.log(i)
+            for (let j=0; j<=starRating.length; j++){
+                starRating[j].removeClass("checked");
+                starRating[j].addClass("fa-star");
+            }
+            for (let j=0; j<=i; j++){
+                starRating[j].removeClass("fa-star");
+                starRating[j].addClass("checked");
+            }
+        })
+        starRating[i].addEventListener("click",function(){
+            let index;
+            index=i;
+        })
+        starRating[i].addEventListener("mouseleave",function(){
+            for(let j=0; j<=starRating.length; j++){
+                starRating[j].removeClass("checked");
+                starRating[j].addClass("fa-star");
+            }
+            for(let j=0; j<=index; j++){
+            starRating[j].removeClass("fa-star");
+               starRating[j].addClass("checked");
+            };
+})
 
 
-  $(".empty").on("click", function (event) {
-    let count;
+const editingEnquiry=document.getElementById("editingEnquiry");
+const guestEnquiry=document.getElementById("guestEnquiry");
+const mentoringEnquiry=document.getElementById("mentoringEnquiry");
 
-    function selectedStars(item) {
-      count = item.id[0];
-      sessionStorage.starRating = count;
-      let subid = item.id.substring(1);
-      for (let i = 0; i < 5; i++) {
-        if (i < count) {
-          document.getElementById(i + 1 + subid).style.color = "orange";
-        } else {
-          document.getElementById(i + 1 + subid).style.color = "black";
-        }
-        selectedStars(event)
-      }
-    }
 
-    function result() {
-      //Rating : Count
-      //Review : Comment(id)
-      alert(
-        "Rating : " +
-          count +
-          "\nReview : " +
-          document.getElementById("comment").value
-      );
-    }
+$("#editingEnquiry").click(function () {
+$("#editing").show();
+$("#podBtn").show();
 
-    $("#1one", "#2one", "#3one", "4one", "#5one").css("color", "orange");
-  });
+});
 
-  function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("topicSearch");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("searchBar");
-    li = ul.getElementsByTagName("li");
+$("#guestEnquiry").click(function () {
+$("#guest").show();
+$("#podBtn").show();
 
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
+});
+
+$("#mentoringEnquiry").click(function () {
+$("#mentor").show();
+$("#podBtn").show();
+
+});
+
+
+//not working
+const comment=document.getElementById("comment"); 
+const reviewBtn=document.getElementById("reviewBtn");
+const reviewBox=document.getElementById("reviewBox");
+
+$("#reviewBtn").click(function () {
+ const value = comment.value;
+  console.log(value);
+  if (value){
+        localStorage.setItem(value);
+        location.reload();
   }
 });
+    for (let i=0;i<localStorage.length;i++){
+        const key=localStorage.key(i);
+        const value =localStorage.getItem(key);
+
+        reviewBox.innerHTML += `${key}: ${value} <br />`;
+
+}}
+
+})
