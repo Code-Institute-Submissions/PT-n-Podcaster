@@ -15,6 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     >
+    <script src="assets/js/sendEmail.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">>
+   (function(){
+      emailjs.init("user_OY8JUjhzaW7lM0cybGhC9");
+     
+   })();
+</script>
     <link rel="stylesheet" href="assets/css/style.css" >
     <title>PT 'n' Podcaster</title>
   </head>
@@ -200,15 +207,57 @@
           </div>
         </div>
       </div>
+ <div class="row">
+        <div class="col-4">
+          <div class="col-12">
+            <h1>The boring stuff</h1>
+          </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#termsBtn">
+  Terms & Conditions
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="termsBtn" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p class="paragraph">
+       I have a strict 24 hour cancellation policy. If you would like to rearrange a session, please give me a minimum
+of 24 hours notice. If you do not comply with this rule, you will lose your session.
+• Please pay your package total upfront, if this is not possible, you and I can workout a payment plan. I will not
+accept payment per session.
+• If you purchase a package and cannot complete the sessions for any reason, I will not refund payment of
+unused sessions UNLESS there are extenuating circumstances. I will require proof, for example a Doctors
+note/ new work contract, stipulating a relocation. HOWEVER your sessions can be frozen for up to 3 months.
+*All decisions and approaches to moving forward in any of the above circumstances are at my discretion.
+• If you decide to go for an outdoor package, please understand that we will more than likely experience bad
+weather. If this will deter you from training this is not the right package for you. I will not accept bad weather as
+a reason for a cancelled session.
+• Please come to every session with a pro-active attitude. If you cant do an exercise, know that you are
+struggling AT THE MOMENT but you WILL improve. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
     </div>
 
     <div class="container-fluid" id="podcast">
       <div class="row">
-        <div class="col-6">
+        <div class="col-4">
           <div class="col-12">
             <h1 class="heading">Podcaster</h1>
           </div>
-          <p>
+          <p class="paragraph">
             My podcasting journey began when I founded the tried it podcast, I
             loved speaking on things I really cared about and getting feedback
             from other girls who looked like me and could relate to my
@@ -223,7 +272,14 @@
             podcasting.. but NO. I realsied that Podcasting was a true and pure
             passion of mine. I needed to continue at all costs!! I started my
             own podcast Mayas minutes and conitued popping up on other peoples'
-            episodes. Podcasting empowered me and whilst i had no trouble
+            episodes. 
+          </p>
+        </div>
+      <div class="col-4">
+          <div class="col-12">
+        <h2 class="heading">How I can help you</h2>
+        </div>
+<p class="paragraph"> Podcasting empowered me and whilst i had no trouble
             finding or using my voice.. the actual production was very daunting
             to me.. so whether you want a guest, a host, a soundboard for your
             ideas, editing advice and support or just an ear to listen, im your
@@ -231,11 +287,9 @@
             much joy, but so many times I nearly gave up because of all the
             little niggly bits in between, I am trying to be the person to
             minimse those obstacles for you so that you can get to your end
-            podcast faster!
-          </p>
-        </div>
-
-        <div class="col-6">
+            podcast faster!</p>
+</div>
+        <div class="col-4">
           <div class="col-12">
             <h1 class="heading">Podcasts</h1>
           </div>
@@ -280,30 +334,31 @@
         </div>
 
         <div class="reviews col-12">
-        
-          <span id="1one" class="fa fa-star checked"></span>
-          <span id="2one" class="fa fa-star empty"></span>
-          <span id="3one" class="fa fa-star empty"></span>
-          <span id="4one" class="fa fa-star empty"></span>
-          <span id="5one" class="fa fa-star empty"></span>
+        <div id="starRatings">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
           <br />
-
-          <textarea
-            style="margin-top: 5px;"
-            class="form-control"
-            rows="3"
-            id="comment"
-            placeholder="Enter your review"
-          ></textarea>
-
-          <button
-            onclick="result()"
+        </div>
+          <fieldset>
+          <input type="text" id="comment" placeholder="What do you think of the top picks?" class="col-12"> 
+            <button
             type="button"
-            style="margin-top: 10px; margin-left: 5px;"
-            class="btn btn-lg btn-success"
-          >
-            Submit
-          </button>
+            class="btn btn-lg btn-success col-3"
+            id="reviewBtn" >
+            Submit</button>
+          </fieldset>
+
+<br />
+          
+  <fieldset class="form-control col-12">
+          <legend>Reviews</legend>
+          <div ids="reviewBox"> </div>
+        
+          </fieldset>
+
         </div>
       </div>
 
@@ -350,7 +405,7 @@
 
         <div class="col-6 ptForm">
           <h2 class="heading">Podcast form</h2>
-          <form onsubmit="return sendMail(this);">
+          <form onsubmit="return sendMail(this);return false;">
             <input
               type="text"
               name="name"
@@ -367,19 +422,38 @@
               placeholder="Email"
               required
             />
+
+            <div class="form-check">
+  <input class="form-check-input" type="radio" name="editing-enquiry" id="editingEnquiry" value="option1">
+  <label class="form-check-label" for="exampleRadios1">
+    Editing Enquiry
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="guest-enquiry" id="guestEnquiry" value="option2">
+  <label class="form-check-label" for="guest-enquiry">
+   Guest Enquiry
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mentoring-enquiry" id="mentoringEnquiry" value="option3">
+  <label class="form-check-label" for="mentoring-enquiry">
+Mentoring Enquiry
+  </label>
+</div>
             <textarea
               rows="5"
               name="projectsummary"
               class="form-control"
-              id="projectsummary"
-              placeholder="Editing Enquiry"
+              id="editing"
+              placeholder="Editing enquiry"
               required
             ></textarea>
             <textarea
               rows="5"
               name="projectsummary"
               class="form-control"
-              id="projectsummary"
+              id="guest"
               placeholder="Guest Enquiry"
               required
             ></textarea>
@@ -387,19 +461,12 @@
               rows="5"
               name="projectsummary"
               class="form-control"
-              id="projectsummary"
+              id="mentor"
               placeholder="Mentoring Enquiry"
               required
             ></textarea>
-            <textarea
-              rows="5"
-              name="projectsummary"
-              class="form-control"
-              id="projectsummary"
-              placeholder="Other Enquiry"
-              required
-            ></textarea>
-            <button type="submit" class="btn btn-secondary center-block">
+           
+            <button type="submit" class="btn btn-secondary center-block" id="podBtn">
               Send Podcast Enquiry
             </button>
           </form>
@@ -477,7 +544,7 @@
     </footer>
 
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
     <script
