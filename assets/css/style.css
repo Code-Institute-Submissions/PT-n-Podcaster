@@ -2,11 +2,15 @@
 
 /* nav bar */
 nav {
-  height: auto;
+  height: 126px;
   width: 100%;
-  background-color: #edf2ef;
+  background-color: #aa96b7;
+  color: black;
 }
 
+.navbar-nav .nav-link {
+    color: #cac9ae;
+}
 .navbar-toggler {
   padding: 2rem 0rem 0 2rem;
   font-size: 1.25rem;
@@ -14,6 +18,20 @@ nav {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    background-color: #aa96b7;
+    color: #cac9ae;
+}
+
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #cac9ae;
+ 
 }
 
 .fa-bars {
@@ -30,31 +48,36 @@ nav {
 .dropdown li a {
   color: black;
   text-decoration: none;
-  background-color: transparent;
   padding-top: 15px;
 }
 
 ul li a:hover {
-  background-color: yellow;
+
   padding-top: 0px;
 }
 
 .sticky-top {
   position: sticky;
 }
-.logo {
-  height: 100px;
-  width: 100px;
+
+  .logo {
+    height: 120px;
+    width: 120px;
 }
+
 /* pages */
 
 /* welcome*/
 #welcome {
   background-color: #edf2ef;
-  color: black;
+  color: #39393A;
   padding-top: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+#welcome p{
+    padding: .5rem;
 }
 /* about*/
 
@@ -65,6 +88,21 @@ ul li a:hover {
   color: black;
 }
 
+#about .a {
+  color: black;
+}
+
+#about a:hover {
+color: #aa96b7;
+}
+#about h1{
+    padding: 1rem;
+}
+
+#about .terms {
+  color: black;
+  background-color: transparent;
+}
 .mayaImg {
   height: 450px;
 }
@@ -72,27 +110,41 @@ ul li a:hover {
 /* pt*/
 
 #pt {
-  background-color: #edf2ef;
+  background-color: #BF4E30;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: black;
+  color: #fafafa;
 }
-
+.blockquote-footer{
+background-color: #edf2ef;
+}
 #outdoorTraining {
+     background-color: #CAC9AE;
 }
 
 #virtualTraining {
+     background-color: #CAC9AE;
+}
+.remoteExercise {
+  margin: auto;
+}
+#inHome {
+     background-color: #CAC9AE;
 }
 
-#inHomeTraining {
+.ptForm{
+    padding: 1rem 0rem 1rem 1rem;
 }
 
+.ptRates{
+    padding: 1rem 0.5rem .8rem 0rem;
+}
 /* podcast*/
 #podcast {
-  background-color: white;
+  background-color: #3A4E48;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: black;
+  color: #fafafa;
 }
 
 .checked {
@@ -153,6 +205,18 @@ ul li a:hover {
 #podBtn {
   display: none;
 }
+
+
+/* my journey*/
+#podcastingJourney {
+  background-color: #3A4E48;   
+  color: #fafafa;
+}
+
+
+#podcastingJourney img{
+width: 600px;
+}
 /* contact*/
 #contact {
   background-color: #edf2ef;
@@ -182,7 +246,7 @@ ul li a:hover {
 
 .baby {
   height: 300px;
-  width: 500px;
+ 
   padding: 0.5rem 0 0.5rem 0rem;
   align-items: center;
 }
@@ -220,7 +284,7 @@ ul li a:hover {
   font-family: "montserrat";
   font-size: 25px;
   font-weight: 300;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .special-para {
@@ -237,16 +301,63 @@ ul li a:hover {
   display: none;
   margin: 0;
 }
-
+.blockquote{
+    padding: 1rem ;
+}
 .blockquote-footer {
   color: black;
 }
 
+/* buttons */
+#mailButton{
+    
+
+}
+.terms{
+    color: #BF4E30;
+    background-color: #fafafa;
+    border-color: #fafafa;
+    padding: .5rem 1rem .5rem 1rem;
+}
+h3{
+    padding-top: 1rem;
+}
+
+hr{
+    border: none;
+}
 /* features */
 
 #map {
   position: relative;
   height: 300px;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #fafafa;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+  background-color: #BF4E30;
+    color: #fafafa;
+}
+
+.modal-dialog , .modal-content , .modal-header{
+    background-color: #BF4E30;
+    color: #fafafa; 
 }
 
 .tried {
@@ -266,9 +377,6 @@ ul li a:hover {
   border-radius: 0.5rem;
 }
 
-.table th:hover {
-  color: red;
-}
 .table td {
   padding: 0.75rem;
   vertical-align: top;
@@ -277,9 +385,6 @@ ul li a:hover {
   border-radius: 0.5rem;
 }
 
-.table td:hover {
-  color: red;
-}
 
 .table thead th {
   vertical-align: bottom;
@@ -396,24 +501,28 @@ ul li a:hover {
   margin: auto;
 }
 
-.remoteExercise {
-  height: 450px;
-  width: 100%;
-  margin: auto;
-}
+
 /* footer */
 footer {
-  background-color: #57c4e5;
-  color: black;
+   background-color: #aa96b7;
+  color: black
 }
 
 footer a {
-  color: black;
+   color: black;
+
   cursor: pointer;
 }
 
 footer a:hover {
-  color: grey;
+  color:#cac9ae;
   text-decoration-color: none;
   background-color: transparent;
+}
+footer .btn{
+    padding: none;
+}
+footer .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #cac9ae;
 }
