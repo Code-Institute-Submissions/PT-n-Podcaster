@@ -63,21 +63,23 @@ The goal of this project is to create a more interactive and specific version of
 
 #####  Structure
 
-The site is a scrolling site with 4 sections when viewed on a PC and 6 sections when viewed on a mobile. I wanted the site to be both interactive and accessible. 
+The site is a scrolling and multiple pages site with 4 sections on the homepage and 3 seperate pages for the PT section, 1 seperate page for the POdcast section , a seperate page for About me and a seperate page for FAQ's. Originally I opted for a scrolling site, however when I realsied how much contnent i needed to out on the site, to try and messily limit it to a crolling site would have made the site look rushed, unprofessional and contribyte to a bad user experience.
+
+In my opinion the site is still very accessible and gives the user the freedom to venture into the aspects that they are interested in, with a click and those who know eactly what they are looking for can easily naivgate to the relevant pages. 
 
 #####  Colour scheme
-I wanted the colour scheme of this project to be elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
-I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that light blue had healing associations and it is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/75b9be-a8ccc9-b3d6c6-dceab2-c7d66d-2f4b26'>coolors.com</a> to help me find a fitting colour scheme, incorporating all the emotions i desired.
+I wanted the colour scheme of this project to elicit emotions of; motivation ; conversation and health. In order to achieve this difficult blend of emotions, i needed to carry out some research on the meanings and feelings assiciated with certain colours. 
+I knew vaguely that green was associated with health because of new beginnings and seasonal indications from the spring months, but had no idea how best to convey the conversationalism with the podcast aspect of my site. I found <a href='https://www.templatemonster.com/blog/warm-cool-color-psychology-web-design/'>this</a> blog post, which explained that purple had soothing sensual and imaginative! It is also aesthetically very profesional, when placed with a range of other colours. To decide on what the other range of colours should look like, i turned to pinterest for some <a href='https://www.pinterest.co.uk/shamastock/wellness-color-palette-ideas/'> inspiration </a> I then used <a href= 'https://coolors.co/'>coolors.co</a> to help me find a fitting colour scheme, incorporating all the emotions i desired. A screenshot of the colouor scheme canbe found <a href="assets/logos/palette.pdf">here.</a>
 
 ##### Logo:
-I used a very helpful <a href="https://studio.tailorbrands.com/business/52878134/wizard/editor?currentId=3400361333&logosStepId=326203893&origBrandVersionId=3400361333&originalIndex=0">tool</a> to create the logo. I beleieved the logo should equally signify the importance of both of the skills i am using the website to advocate. I specifically chose sports looking headphones for the icon image as, they are instantly assiciated with exercise and also audio. 
+I decided to base my logo around the colour purple and then allow this to help me decide on the entire colour scheme. To design the temporary logo I used  <a href="https://hatchful.shopify.com/"> Hatchful.shopify.com</a> . Although this gave me a limited scope for design, I was able to use this tool to decide on a key image/ icon which ties both PT and Podcasting together.. Headphones-they are instantly assiciated with exercise and also audio.  I played around and came up with the logo you can at the top of this page. Alternatively the logo can be found <a href="assets/logos">here </a> Along with a screenshot of the creation process. I beleieved the logo should equally signify the importance of both of the skills i am using the website to advocate. 
 
 ##### Fonts: 
-I chose to use the fonts Lato and Montserrat. After looking at other fitness/ wellness or simply, health websited, i found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
+I chose to use the fonts <a href="https://fonts.google.com/specimen/Lato?sidebar.open=true&selection.family=Lato"> Lato</a> and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Lato|Montserrat&query=montser">Montserrat</a>. After looking at other fitness/ wellness or simply, health websited, i found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
 
 
 ##### Colours:
-I wanted the colours to exude health, professionalism and conversation. For this reason i decided on colour scheme 3, because it encapsulated all three aims. and would sit nicely beneath the logo. 
+I wanted the colours to vary but also show continuity, this is why i made the background colour for the pT section on the home page, 'vermilion' and then the background colour for the corresponsding pt oages (outdoor.html, virtual.html and inHome.html) 'sage'. As there was only one seperate correspoding Podcast page (podcastJourney.html) I decided that tthey should have the continuity of the same colour ' dar slate gray', whih also complimented the accompanying pictures and videos very nicely. I used 'Onyx' as the font colour, on all the white background pages because i felt black was too harsha nd the slightl different 'Onyx' set the text and background colurs off nicely. 
 
 
 
@@ -90,8 +92,10 @@ View my wireframes <a href=" ">here.</a>
 
 * Map with markers
 * Interactive Contact form (#contact)
-* Interactive animations (house and webcam)
+* Interactive animations (Outdoor in home and virtual training on index.html)
 * search box for topics ive spoken on (podcast section)
+* Star rating and review box
+* Personal Training rates which illuminate on hover and return to original background colour on mouseleave. 
 
 
 ## Technologies Used: 👨‍💻
@@ -116,26 +120,33 @@ View my wireframes <a href=" ">here.</a>
 ## Testing: 🔌
 
 
-Test Planning:
+Test Planning: 
+I was very concerned with functionality of my PT enquiry form, especially because it is this form which could potentially lose me a new client, if the user felt disatisfied with the functionality. 
 
 Testing Stories:
+I continued to test the function throughout the process and quickly realised that whilst the code I had used from my template js email was correct, i had used slightly ineffective code in my email.js file and corresponding html, because evrytime i tried to use the function to test it, i would not receuev an email and it would refresh my details everytime. After an in depth explanation from my tutpr i learnt that the 'onsubmit' action had built in functions, when if not accompanied by a return false action, meant that my code was being asked to send the form and refresh, virtually at the same time. Hence why i was not receieving the email and the form was refreshig details on every attempt.
+
+I fixed this issue, by using the source option in dev tools, to look at where the code became unresponsive and found that I had also placed a comma in the wrong place too!
+
+After resolving these issues, i found that my PT enquiry form, was working perfectly well!
 
 
 
-
-Overall:
-Responsiveness -
-
-Plan 📝: 
-
-Implementation 🏭: 
-Verdict ✅: 
+Key aspects:
 Design -
+
+Plan 📝: One of my aims was for the cost of a personal training package to illuminate when the user hovers over the package. 
+
+Implementation 🏭: I tried to initially do this in my css, howvere i could not target the correct elements in an effective way. I would have had to style quite a few 'a' elements and then 'a:hover' elements wich would have in turn, meant that i would have had to target each specific 'a' element and making it individual would have been tough! I eventually, decided to use javascript and the 'mouseenter' and 'mouseleave' functions to add specific css and then remove it. Giveing the appearance of a hover. I could also use 4 unique Id's on each PT page and only have to do the function for each id once within my script.js file, because the id's were each on different pages. 
+
+Verdict ✅: It looks wonderful and i have the desired effect. 
+
+ -
 
 Plan 📝: 
 
 Features:
-map
+
 
 Plan 📝: 
 
@@ -143,13 +154,12 @@ Bugs: 🐞
 Bugs During Development:
 During the development process for this project, I was fortunate to not have to battle with many annoying bugs. Listed below are a few issues that I faced and overcame during the project.
 
-animations
+js email
 
-Plan 📝: 
+Plan 📝: I wanted my email function to work effectively and seamlessly 
 
 Bugs: 🐞
-Bugs During Development:
-During the development process for this project, I was fortunate to not have to battle with many annoying bugs. Listed below are a few issues that I faced and overcame during the project.
+the email continued not to work and i realised that i hadnt listed the src and script in the correct place, i ghad placed it in the footer, as opposed to the header. Once corrected i was no longer getting the 'this fucntion has not been called error' This meant i could find the more critical issue within the code. 
 
 searchbox
 
