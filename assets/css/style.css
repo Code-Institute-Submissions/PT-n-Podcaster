@@ -82,10 +82,10 @@ ul li a:hover {
 /* about*/
 
 #about {
-  background-color: white;
+  background-color: #edf2ef;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: black;
+  color: #39393A;
 }
 
 #about .a {
@@ -110,26 +110,41 @@ color: #aa96b7;
 /* pt*/
 
 #pt {
-  background-color: #BF4E30;
+  background-color: #cac9ae;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #fafafa;
+  color: #39393A;
 }
 .blockquote-footer{
 background-color: #edf2ef;
 }
+.ptOptions{
+    padding: 1rem;
+}
 #outdoorTraining {
-     background-color: #CAC9AE;
+     background-color: #edf2ef;
+     color: #39393A;
 }
 
 #virtualTraining {
-     background-color: #CAC9AE;
+     background-color: #edf2ef;
+     color: #39393A;
+}
+
+#virtualTraining a{
+     
+     color: #39393A;
+}
+#virtualTraining a:hover{
+    
+     color: #4A4930;
 }
 .remoteExercise {
   margin: auto;
 }
 #inHome {
-     background-color: #CAC9AE;
+     background-color: #edf2ef;
+     color: #39393A;
 }
 
 .ptForm{
@@ -141,10 +156,11 @@ background-color: #edf2ef;
 }
 /* podcast*/
 #podcast {
-  background-color: #3A4E48;
+     background-color: #edf2ef;
+     color: #39393A;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #fafafa;
+ 
 }
 
 .checked {
@@ -170,7 +186,7 @@ background-color: #edf2ef;
   margin-left: 5px;
 }
 
-#topicSearch {
+#searchBar {
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
@@ -178,7 +194,7 @@ background-color: #edf2ef;
   margin-bottom: 12px;
 }
 
-#searchBar {
+#topicList {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -209,20 +225,23 @@ background-color: #edf2ef;
 
 /* my journey*/
 #podcastingJourney {
-  background-color: #3A4E48;   
-  color: #fafafa;
+
+    background-color: #edf2ef;
+     color: #39393A;
 }
 
+#podcastingJourney a{
+    color: #39393A;
+}
 
+#podcastingJourney a:hover{
+    color: #3A4E48;
+   
+}
 #podcastingJourney img{
 width: 600px;
 }
-/* contact*/
-#contact {
-  background-color: #edf2ef;
-  padding-top: 10rem;
-  color: black;
-}
+
 
 /*faq*/
 #faq {
@@ -245,9 +264,9 @@ width: 600px;
 }
 
 .baby {
-  height: 300px;
- 
-  padding: 0.5rem 0 0.5rem 0rem;
+height: 292px;
+ border: 2px black solid;
+ border-radius: 4px;
   align-items: center;
 }
 
@@ -317,7 +336,7 @@ width: 600px;
     color: #BF4E30;
     background-color: #fafafa;
     border-color: #fafafa;
-    padding: .5rem 1rem .5rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 h3{
     padding-top: 1rem;
@@ -525,4 +544,8 @@ footer .btn{
 footer .btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #cac9ae;
+}
+
+footer h5{
+    padding: 1rem;
 }

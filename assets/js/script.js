@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+
+//home page- PT options
+
   $("#house-container").mouseover(function () {
     $(".house").fadeTo("medium", 0.15);
     $(".inside").show();
@@ -28,7 +32,8 @@ $(document).ready(function () {
     $(".facetime").hide();
     $(".virtual").fadeTo(1000, 1);
   });
-//i want the text to go onto the photo
+
+//Virtual.html - image animation
 $(".remoteContainer").mouseover(function(){
     $(".remote").slideDown("slow");
 });
@@ -36,14 +41,14 @@ $(".remoteContainer").mouseleave(function(){
     $(".remote").slideUp("slow");
 });
 
-
+//all 3 PT pages- Rates
 $("#session1").mouseover(function(){
     $("#cost1").css("background-color", "#4A4930");
     $("#cost1").css("color", "#fafafa" );
 });
 
 $("#session1").mouseleave(function(){
-    $("#cost1").css("background-color", "#CAC9AE");
+    $("#cost1").css("background-color", "#edf2ef");
     $("#cost1").css("color", "black");
 });
 
@@ -54,7 +59,7 @@ $("#session2").mouseover(function(){
 });
 
 $("#session2").mouseleave(function(){
-    $("#cost2").css("background-color", "#CAC9AE");
+    $("#cost2").css("background-color", "#edf2ef");
     $("#cost2").css("color", "black");
 });
 
@@ -65,7 +70,7 @@ $("#session3").mouseover(function(){
 });
 
 $("#session3").mouseleave(function(){
-    $("#cost3").css("background-color", "#CAC9AE");
+    $("#cost3").css("background-color", "#edf2ef");
     $("#cost3").css("color", "black");
 });
 
@@ -75,12 +80,39 @@ $("#session4").mouseover(function(){
 });
 
 $("#session4").mouseleave(function(){
-    $("#cost4").css("background-color", "#CAC9AE");
+    $("#cost4").css("background-color", "#edf2ef");
     $("#cost4").css("color", "black");
 });
 
+//index.html-podcast section, search bar (not working)
+const searchBar=document.getElementById("searchBar").querySelector('input');
+searchBar.addEventListener('keyup',function(e){
 
-//not working
+    const term=e.target.value.toLowerCase();
+
+    const list=document.querySelector("#topicList UL");
+
+    const topics= list.getElementsByTagName("li");
+
+    console.log("list");
+
+    Array.from(topics).forEach(function(topic){
+
+        const link=topic.firstElementChild.textContent;
+
+        if(link.toLowerCase().indexOf(term)!=-1){
+
+            topics.style.display='block';
+        }else {
+            topic.style.display='none';}
+    })
+
+})
+
+
+
+
+//index.html-podcast section, star rating (not working)
 
 const starRating=document.getElementById("starRatings").children;
     for(let i=0; i<starRating.length; i++){
@@ -111,31 +143,31 @@ const starRating=document.getElementById("starRatings").children;
 })
 
 
-const editingEnquiry=document.getElementById("editingEnquiry");
-const guestEnquiry=document.getElementById("guestEnquiry");
-const mentoringEnquiry=document.getElementById("mentoringEnquiry");
-
+//index.html-podcast section, podcast form
 
 $("#editingEnquiry").click(function () {
-$("#editing").show();
-$("#podBtn").show();
+$("#editing").toggle($(this).prop("checked"));
+$("#podBtn").toggle($(this).prop("checked"));
 
 });
 
 $("#guestEnquiry").click(function () {
-$("#guest").show();
-$("#podBtn").show();
+$("#guest").toggle($(this).prop("checked"));
+$("#podBtn").toggle($(this).prop("checked"));
 
 });
 
 $("#mentoringEnquiry").click(function () {
-$("#mentor").show();
-$("#podBtn").show();
+$("#mentor").toggle($(this).prop("checked"));
+$("#podBtn").toggle($(this).prop("checked"));
 
 });
 
+//add if function which causes the radio buttons to unclick after being pressed more than once
 
-//not working
+
+
+//index.html-podcast section, review box (not working)
 const comment=document.getElementById("comment"); 
 const reviewBtn=document.getElementById("reviewBtn");
 const reviewBox=document.getElementById("reviewBox");
@@ -154,6 +186,6 @@ $("#reviewBtn").click(function () {
 
         reviewBox.innerHTML += `${key}: ${value} <br />`;
 
-}}
+}})
 
 })
