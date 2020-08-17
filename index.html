@@ -15,8 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     >
-    <script src="assets/js/sendEmail.js"></script> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script>
    (function(){
       emailjs.init("user_OY8JUjhzaW7lM0cybGhC9");
      
@@ -45,22 +47,14 @@
         </button>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
-                class="nav-link nav-item"
-                href="index.html"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Home <span class="sr-only"></span
+                class=" nav-link"
+                href="index.html">Home <span class="sr-only"></span
               ></a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="about.html">About</a>
-              </div>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -93,11 +87,7 @@
                 <a class="dropdown-item" href="#podcast">Services</a>
               </div>
             </li>
-
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Get in touch</a>
-            </li>
+           
           </ul>
         </div>
       </nav>
@@ -145,7 +135,7 @@
         
       </div>
 
-      <div class="row">
+      <div class="row ptOptions">
         <div class="col-4">
           <div class="col-12">
             <h2 class="heading">Outdoor Training</h2>
@@ -203,10 +193,6 @@
         </div>
       </div>
  <div class="row">
-        <div class="col-4">
-          <div class="col-12">
-           <h3 class="heading">The boring stuff</h3>
-          </div>
 
 <button type="button" class="btn terms" data-toggle="modal" data-target="#termsBtn">
   Terms & Conditions
@@ -247,7 +233,7 @@ struggling AT THE MOMENT but you WILL improve. </p>
     </div>
  </div>
       </div>
-    </div>
+
 
     <div class="container-fluid" id="podcast">
       <div class="row">
@@ -337,49 +323,54 @@ struggling AT THE MOMENT but you WILL improve. </p>
       </div>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-6" id="searchBar">
           <input
             type="text"
-            id="topicSearch"
-            onkeyup="myFunction()"
             placeholder="Search for some of the topics I have discussed"
           /><span class="searchIcon"><i class="fas fa-search"></i></span>
 
-          <ul id="searchBar">
+          <ul id="topicList">
             <li>
-              <a
+              <a class="searchTerm"
                 href="https://podcasts.apple.com/gb/podcast/ep-48-b-l-a-c-k/id1438261984?i=1000452972982"
                 target="_blank"
                 >Racism</a
               >
             </li>
-            <li><a href="#" target="_blank">Colourism</a></li>
+            <li><a class="searchTerm" href="https://podcasts.apple.com/gb/podcast/tried-it-podcast/id1438261984?i=1000440118753" target="_blank">Colourism</a></li>
             <li>
-              <a
+              <a class="searchTerm"
                 href="https://www.instagram.com/tv/CC_vPN4gT1h/?igshid=1xqvfvvm3jyie"
                 target="_blank"
                 >White Privilege</a
               >
             </li>
 
-            <li><a href="https://www.instagram.com/tv/CCJpwXUgHNL/?igshid=1d9fwfim9exep" target="_blank">Misogyny</a></li>
-            <li><a href="https://youtu.be/EccmHtltE28" target="_blank">Transgenderism</a></li>
-            <li><a href="https://www.instagram.com/tv/CC_vPN4gT1h/?igshid=xtho89hj7ggz" target="_blank">Rape Culture</a></li>
+            <li><a class="searchTerm" href="https://www.instagram.com/tv/CCJpwXUgHNL/?igshid=1d9fwfim9exep" target="_blank">Misogyny</a></li>
 
-            <li><a href="https://youtu.be/-MjeFbW_Nkk" target="_blank">Corona Virus</a></li>
-            <li><a href="#" target="_blank">Corona Virus whilst BAME</a></li>
-            <li><a href="https://podcasts.apple.com/gb/podcast/tried-it-podcast/id1438261984?i=1000438225307" target="_blank">Brexit</a></li>
+            <li><a class="searchTerm" href="https://youtu.be/EccmHtltE28" target="_blank">Transgenderism</a></li>
 
-            <li><a href="https://youtu.be/9cRVsjS9YfY" target="_blank">My formative years</a></li>
-            <li><a href="https://youtu.be/GR4YhuPm2FQ" target="_blank">Upbringing</a></li>
-            <li><a href="https://www.instagram.com/tv/CAdfyT3hWwx/?igshid=1g6e18qixvfu2" target="_blank">Mental Health</a></li>
+            <li><a class="searchTerm" href="https://www.instagram.com/tv/CC_vPN4gT1h/?igshid=xtho89hj7ggz" target="_blank">Rape Culture</a></li>
+
+            <li><a class="searchTerm" href="https://youtu.be/-MjeFbW_Nkk" target="_blank">Corona Virus</a></li>
+
+            <li><a  class="searchTerm" href="https://www.instagram.com/tv/CBTkvFPgQsr/?igshid=bawl4gd47rmt" target="_blank">Corona Virus whilst BAME</a></li>
+
+            <li><a class="searchTerm" href="https://podcasts.apple.com/gb/podcast/tried-it-podcast/id1438261984?i=1000438225307" target="_blank">Brexit</a></li>
+
+            <li><a class="searchTerm" href="https://youtu.be/9cRVsjS9YfY" target="_blank">My formative years</a></li>
+
+            <li><a class="searchTerm" href="https://youtu.be/GR4YhuPm2FQ" target="_blank">Upbringing</a></li>
+
+            <li><a class="searchTerm" href="https://www.instagram.com/tv/CAdfyT3hWwx/?igshid=1g6e18qixvfu2" target="_blank">Mental Health</a></li>
           </ul>
         </div>
-        <!--Add search bar of all my topics?-->
+        
 
-        <div class="col-6 ptForm">
-          <h2 class="heading">Podcast form</h2>
-          <form onsubmit="return sendMail(this);return false;">
+        <div class="col-6">
+          <h2 class="heading">Podcast Enquiry</h2>
+          <form onsubmit="sendPodcastMail(this); return false;">
+          
             <input
               type="text"
               name="name"
@@ -397,125 +388,123 @@ struggling AT THE MOMENT but you WILL improve. </p>
               required
             />
 
-            <div class="form-check">
-  <input class="form-check-input" type="radio" name="editing-enquiry" id="editingEnquiry" value="option1">
-  <label class="form-check-label" for="exampleRadios1">
-    Editing Enquiry
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="guest-enquiry" id="guestEnquiry" value="option2">
-  <label class="form-check-label" for="guest-enquiry">
-   Guest Enquiry
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="mentoring-enquiry" id="mentoringEnquiry" value="option3">
-  <label class="form-check-label" for="mentoring-enquiry">
-Mentoring Enquiry
-  </label>
-</div>
-            <textarea
-              rows="5"
-              name="projectsummary"
-              class="form-control"
+			<div class="form-check">
+                
+				<label id="editingEnquiry">
+                 <input type="checkbox" value="option1"  name="editing-enquiry">
+			   Editing Enquiry
+			    </label>
+              
+          
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="guest-enquiry" id="guestEnquiry" value="option2">
+				<label class="form-check-label" for="guest-enquiry">
+			    Guest Enquiry
+			    </label>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="mentoring-enquiry" id="mentoringEnquiry" value="option3">
+				<label class="form-check-label" for="mentoring-enquiry">
+			    Mentoring Enquiry
+			    </label>
+			</div>
+			
+              <textarea rows="5"
+            name="editing"
+            class="form-control"
               id="editing"
               placeholder="Editing enquiry"
-              required
-            ></textarea>
-            <textarea
-              rows="5"
-              name="projectsummary"
-              class="form-control"
-              id="guest"
-              placeholder="Guest Enquiry"
-              required
-            ></textarea>
-            <textarea
-              rows="5"
-              name="projectsummary"
-              class="form-control"
-              id="mentor"
-              placeholder="Mentoring Enquiry"
-              required
-            ></textarea>
-           
-            <button type="submit" class="btn btn-secondary center-block" id="podBtn">
-              Send Podcast Enquiry
-            </button>
-          </form>
-        </div>
+              required>
+            </textarea>
+            
+			<textarea
+            rows="5"
+            name="guest"
+            class="form-control"
+            id="guest"
+            placeholder="Guest Enquiry"
+            required>
+            </textarea>
+			<textarea
+            rows="5"
+            name="mentor"
+            class="form-control"
+            id="mentor"
+            placeholder="Mentoring Enquiry"
+            required>
+            </textarea>
+			
+			<input type="submit" class="btn btn-secondary center-block" value="submit" name="Send Enquiry" id="podBtn">
+			           
+			</form>
+            <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thank you for your message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Woo! That has been sent and you can expect a response in 1-2 working days! 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-
-    <div class="container-fluid" id="contact">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="title">Hit me up!</h1>
-        </div>
-
-        <div class="col-6">
-          <p>
-            I also do a bunch of other stuff ALL the time, heres what ive got on
-            this month!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <h5 class="uppercase">PT Terms and Conditions</h5>
-          <button type="button" class="btn footer" data-toggle="modal" data-target="#termsBtn">
-  Terms & Conditions
-</button>
-
-          
-        </div>
-
-        <div class="col-4">
-          <h5 class="uppercase">
-            Stay connected
-          </h5>
-          <div class="col-12">
-            <a
-              href="https://www.instagram.com/mayasaffronhan/"
-              target="_blank"
-              class="footer"
-              aria-label="instagram"
-            >
-              <i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <h5 class="uppercase">Stay entertained</h5>
-          <div class="col-12">
-            <a
-              href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber"
-              target="_blank"
-              class="footer"
-              aria-label="youtube channel"
-              ><i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"
-    ></script>
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
-</html>
+  </div>
+</div>
+  </div>
+			</div>
+			</div>
+			</div>
+			
+			<footer class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<h5 class="uppercase">PT Terms and Conditions</h5>
+						<button type="button" class="btn footer" data-toggle="modal" data-target="#termsBtn">
+			  Terms & Conditions
+			</button>
+			
+			
+					</div>
+			
+					<div class="col-4">
+						<h5 class="uppercase">
+							Stay connected
+						</h5>
+						<div class="col-12">
+							<a href="https://www.instagram.com/mayasaffronhan/" target="_blank" class="footer"
+								aria-label="instagram">
+								<i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+			
+					<div class="col-4">
+						<h5 class="uppercase">Stay entertained</h5>
+						<div class="col-12">
+							<a href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber" target="_blank"
+								class="footer" aria-label="youtube channel"><i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			
+			<script defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"></script>
+			<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+			
+			<script src="assets/js/maps.js"></script>
+			<script src="assets/js/script.js"></script>
+            <script src="assets/js/sendEmail.js"></script>
+			</body>
+			
+			</html>
