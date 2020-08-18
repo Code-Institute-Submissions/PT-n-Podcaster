@@ -162,6 +162,20 @@ background-color: #edf2ef;
   padding-bottom: 3rem;
  
 }
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.iframe-container  iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .checked {
   color: orange;
@@ -200,7 +214,7 @@ background-color: #edf2ef;
   margin: 0;
 }
 
-#searchBar li a {
+#buzzTopics li a {
   border: 1px solid #ddd;
   margin-top: -1px;
   background-color: #f6f6f6;
@@ -211,7 +225,7 @@ background-color: #edf2ef;
   display: block;
 }
 
-#searchBar li a:hover:not(.header) {
+#buzzTopics li a:hover:not(.header) {
   background-color: #eee;
 }
 
