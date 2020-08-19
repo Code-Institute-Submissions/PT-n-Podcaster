@@ -83,102 +83,69 @@ $(document).ready(function() {
 		$("#cost4").css("background-color", "#edf2ef");
 		$("#cost4").css("color", "black");
 	});
-
-    //index.html-podcast section, search bar (not working)
-function filterFunction() {
-  let input, filter, div, a, i;
-    input = document.getElementById("searchBar");
-    console.log()
-    filter= input.value.toLowerCase();
-    div = document.getElementById("buzzTopics");
-    a = document.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toLowerCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-}
-
-};
   
 	//index.html-podcast section, star rating (not working)
-    let hasBeenClicked=false;
+    
 	const starRating = $("#starRatings").children();
 	for (let i = 0; i < starRating.length; i++) {
 		starRating[i].addEventListener("mouseover", function() {
-            //console.log(i)
-            // $('.empty').removeClass('checked');
+           
 			for (let j = 1; j <= starRating.length; j++) {
-				$(starRating[j]).removeClass("checked");
+                              
+                $(starRating[j]).removeClass("checked");
+                
 			}
-			for (let j = i; j > 0; j--) {
-				
-				$(starRating[j]).addClass("checked");
+			for (let j = 1; j> i; j--) {
+               
+                $(starRating[j]).addClass("checked");
+                console.log(starRating[j])  
 			}
-		});
-		// starRating[i].addEventListener("click", function() {
-		// 	let index;
-		// 	index = i;
-		// });
+        });
+		
 		starRating[i].addEventListener("mouseleave", function() {
             for (let j = 1; j <= starRating.length; j++) {
-				$(starRating[j]).addClass("checked");
+                $(starRating[j]).addClass("checked");
+                console.log(j)  
 			}
-			for (let j = i; j > 0; j--) {
-				$(starRating[j]).removeClass("checked");
+			for (let j = 1; j> i; j--) {
+                $(starRating[j]).removeClass("checked");
+                console.log(j)  
             }
-            if{( (hasBeenClicked=true;)
-                return;)
+
+             });
+
+           
+            starRating[i].addEventListener("click", function() {    
+                for (let j = 1; j <= starRating.length; j++) {
+                $(starRating[j]).addClass("checked");
+                console.log(j)  
+			}
+			for (let j = 1; j> i; j--)  {
+                $(starRating[j]).removeClass("checked");
+                console.log(j)  
             }
-		});
-    }
+
+             });       
+        }
 
 		//index.html-podcast section, podcast form
 
-		// $("#editingEnquiry").click(function() {
-		// 	$("#editing").toggle($(this).prop("checked"));
-		// 	$("#podBtn").toggle($(this).prop("checked"));
+		$("#editingEnquiry").click(function() {
+			$("#editing").toggle($(this).prop("checked"));
+			$("#podBtn").toggle($(this).prop("checked"));
 
-		// });
+		});
 
-		// $("#guestEnquiry").click(function() {
-		// 	$("#guest").toggle($(this).prop("checked"));
-		// 	$("#podBtn").toggle($(this).prop("checked"));
+		$("#guestEnquiry").click(function() {
+			$("#guest").toggle($(this).prop("checked"));
+			$("#podBtn").toggle($(this).prop("checked"));
 
-		// });
+		});
 
-		// $("#mentoringEnquiry").click(function() {
-		// 	$("#mentor").toggle($(this).prop("checked"));
-		// 	$("#podBtn").toggle($(this).prop("checked"));
+		$("#mentoringEnquiry").click(function() {
+			$("#mentor").toggle($(this).prop("checked"));
+			$("#podBtn").toggle($(this).prop("checked"));
 
-		// });
-
-		//add if function which causes the radio buttons to unclick after being pressed more than once
-
-
-
-		//index.html-podcast section, review box (not working)
-		// const comment = document.getElementById("comment");
-		// const reviewBtn = document.getElementById("reviewBtn");
-		// const reviewBox = document.getElementById("reviewBox");
-
-		// $("#reviewBtn").click(function() {
-		// 	const value = comment.value;
-		// 	console.log(value);
-		// 	if (value) {
-		// 		localStorage.setItem(value);
-		// 		location.reload();
-		// 	}
-		// });
-		// for (let i = 0; i < localStorage.length; i++) {
-		// 	const key = localStorage.key(i);
-		// 	const value = localStorage.getItem(key);
-
-		// 	reviewBox.innerHTML += `${key}: ${value} <br />`;
-
-		// }
-	
-
-});
+        });
+        
+    });

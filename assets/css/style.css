@@ -25,6 +25,8 @@ nav {
     float: none;
     background-color: #aa96b7;
     color: #cac9ae;
+    width: fit-content;
+}
 }
 
 .dropdown-item:hover {
@@ -517,19 +519,19 @@ a:hover {
 }
 
 .house {
-  height: 300px;
+
   width: 100%;
   margin: auto;
 }
 
 .virtual {
-  height: 300px;
+  
   width: 100%;
   margin: auto;
 }
 
 .outdoor {
-  height: 300px;
+
   width: 100%;
   margin: auto;
 }
@@ -562,4 +564,13 @@ footer .btn:focus {
 
 footer h5{
     padding: 1rem;
+}
+
+@media (max-width:530px) {
+h5 {
+    display: none;
+}
+.ptOptions h2{
+  display: none;  
+}
 }
