@@ -180,7 +180,7 @@ background-color: #edf2ef;
 .checked {
   color: orange;
 }
-.fa-star{
+.unchecked {
     color: gray;
 }
 .reviews {
