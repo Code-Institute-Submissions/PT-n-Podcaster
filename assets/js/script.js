@@ -84,49 +84,53 @@ $(document).ready(function() {
 		$("#cost4").css("color", "black");
 	});
   
-	//index.html-podcast section, star rating (not working)
-    
-	const starRating = $("#starRatings").children();
-	for (let i = 0; i < starRating.length; i++) {
-		starRating[i].addEventListener("mouseover", function() {
-           
-			for (let j = 1; j <= starRating.length; j++) {
-                              
-                $(starRating[j]).removeClass("checked");
+    //index.html-podcast section, star rating (not working)
+    const starRating = document.querySelectorAll(".fa-star");
+    // console.log(starRating);
+
+    for (let i =0; i< starRating.length; i++){
+        starRating[i].addEventListener("mouseover",function(){
+// console.log(starRating[i]);
+            for (let j=1; j<=i; j++){
+                starRating[j].classList.add("checked");
+            }
+        })
+starRating[i].addEventListener("mouseleave",function(){
+// console.log(starRating[i]);
+            for (let j=1; j<=starRating.length; j++){
+                starRating[j].classList.remove("checked");
+            }
+        })
+    starRating[i].addEventListener("click",function(){
+// console.log(starRating[i]);
+            for (let j=1; j<=starRating.length; j++){
+                if(j<=i){
+                    starRating[j].classList.add("isClicked");
+                }
+                else{
+                    starRating[j].classList.remove("isClicked");
+                }
                 
-			}
-			for (let j = 1; j> i; j--) {
-               
-                $(starRating[j]).addClass("checked");
-                console.log(starRating[j])  
-			}
-        });
-		
-		starRating[i].addEventListener("mouseleave", function() {
-            for (let j = 1; j <= starRating.length; j++) {
-                $(starRating[j]).addClass("checked");
-                console.log(j)  
-			}
-			for (let j = 1; j> i; j--) {
-                $(starRating[j]).removeClass("checked");
-                console.log(j)  
+            
             }
+        })
+    
+    
+    }
 
-             });
+
+    //index.html-podcast section, podcast review
+
+    const input = document.querySelector("#comment");
+    const button = document.querySelector("#reviewBtn");
+    const review = document.querySelector("#reviewText");
+    button.addEventListener("click",function(){
+        review.textContent = input.value;
+    
+    })
+
 
            
-            starRating[i].addEventListener("click", function() {    
-                for (let j = 1; j <= starRating.length; j++) {
-                $(starRating[j]).addClass("checked");
-                console.log(j)  
-			}
-			for (let j = 1; j> i; j--)  {
-                $(starRating[j]).removeClass("checked");
-                console.log(j)  
-            }
-
-             });       
-        }
 
 		//index.html-podcast section, podcast form
 
@@ -148,4 +152,35 @@ $(document).ready(function() {
 
         });
         
+
+
+
+//footer, modal button for terms (not working)
+
+$('#footerTerms').on('click', function () {
+  $('#modalInput').show();
+  console.log();
+});
+
+
+
+
     });
+
+    function filterFunction() {
+  let input, filter, div, a, i;
+    input = document.getElementById("searchBar");
+    console.log()
+    filter= input.value.toLowerCase();
+    div = document.getElementById("buzzTopics");
+    a = document.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+}
+
+};
