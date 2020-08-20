@@ -163,6 +163,7 @@ Here is a list of known bugs that exist on the site: ❌
 
 - Sticky top class in the navbar is ineffective. 
 - When the site is viewed on a device smaller than a laptop the navbar options appear on the opposite side of the navbar burger button. 
+- Star rating flickers slightly whilst hovering over stars.
 
 
 Features to implement in future changes:
