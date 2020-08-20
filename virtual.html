@@ -7,17 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-     <script src="assets/js/sendEmail.js"></script> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">>
-   (function(){
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
+	<script>
+		(function(){
       emailjs.init("user_OY8JUjhzaW7lM0cybGhC9");
      
    })();
-</script>
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>PT 'n' Podcaster</title>
@@ -38,7 +36,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+           <span><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -103,9 +101,8 @@
 <p class="paragraph"> We live in a modern age. Women are powerhouses and your schedule should not get in the way of your fitness! I can carry out sessions via facetime zoom or WhatsApp video chat. This became my most popular method of training women during COVID for obvious reasons... Plus, it empowered many of my clients and women worldwide to get fit on their terms. I feel that there is so much pressure surrounding women and their bodies. Unfortunately, health and fitness are presented to us as a prized and privileged behaviour/ lifestyle which can only be carried out in one way (usually at expensive gyms). COVID and lockdown showed that each person has an individual style and when the pressure to do things in a certain way is removed, it permits us to work out more! I will train you from your living room/ bedroom or garden and it'll feel like I'm right there with you! </p>
 </div>
 
-<div class="col-6">
-<h1 class="heading"></h1>
-<div class="remoteContainer">
+
+<div class="col-6 remoteContainer">
 <img src="assets/img/remoteWorkout.JPG" alt="remote exercise" class="remoteExercise img-fluid">
 <div class="text-Container">
               <p class="revealText remote">
@@ -114,7 +111,7 @@
               </p>
  </div>
 </div>
-</div>
+
 </div>
 
 
@@ -125,7 +122,8 @@
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
-                    <button type="submit" id="mailButton"class="btn btn-secondary center-block data-toggle="modal data-target="#exampleModal">Send PT Enquiry</button>
+
+                    <button type="submit" id="mailButton" class="btn btn-secondary center-block" data-toggle="modal"> Send PT Enquiry </button>
                 </form>
 
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -160,20 +158,24 @@
     </tr>
   </thead>
   <tbody>
+
     <tr>
-      <th id="session1" scope="row">4 sessions</th>
+      <td id="session1">4 sessions</td>
       <td id="cost1" >£200</td>
     </tr>
 
-     <th id="session2" scope="row">8 sessions</th>
+      <tr>
+      <td id="session2">8 sessions</td>
       <td id="cost2" >£400</td>
     </tr>
 
-     <th id="session3" scope="row">12 sessions</th>
+      <tr>
+      <td id="session3">12 sessions</td>
       <td id="cost3" >£540</td>
     </tr>
 
-     <th id="session4" scope="row">24 sessions</th>
+      <tr>
+      <td id="session4">24 sessions</td>
       <td id="cost4" >£1008</td>
     </tr>
   

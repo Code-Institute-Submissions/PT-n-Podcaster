@@ -7,17 +7,15 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-      <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">>
-   (function(){
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+	</script>
+	<script>
+		(function(){
       emailjs.init("user_OY8JUjhzaW7lM0cybGhC9");
      
    })();
-</script>
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>PT 'n' Podcaster</title>
@@ -38,7 +36,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+           <span><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -123,7 +121,7 @@ We use the baby in sessions to prepare and strengthen your body to combat the st
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
-                    <button type="submit" id="mailButton"class="btn btn-secondary center-block mail" data-toggle="modal" data-target="#exampleModal">Send PT Enquiry</button>
+                    <button type="submit" id="mailButton" class="btn btn-secondary center-block mail" data-toggle="modal" data-target="#exampleModal">Send PT Enquiry</button>
                 </form>
 
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -163,15 +161,18 @@ We use the baby in sessions to prepare and strengthen your body to combat the st
       <td id="cost1">£240</td>
     </tr>
 
-     <th id="session2" scope="row">8 sessions</th>
+    <tr>
+     <td id="session2">8 sessions</td>
       <td id="cost2">£460</td>
     </tr>
 
-     <th id="session3" scope="row">12 sessions</th>
+     <tr>
+     <td id="session3">12 sessions</td>
       <td id="cost3">£630</td>
     </tr>
 
-     <th id="session4" scope="row">24 sessions</th>
+     <tr>
+     <td id="session4">24 sessions</td>
       <td id="cost4">£1188</td>
     </tr>
   
@@ -244,21 +245,24 @@ struggling AT THE MOMENT but you WILL improve. </p>
 					</div>
 				</div>
 			</footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    
-     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap"></script>
- <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-   
-   <script src="assets/js/maps.js"></script>
-   <script src="assets/js/script.js"></script>
-   
+
+	<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg7RyR1oLRLaxlVJQO9Blfb663Ep5rZI&callback=initMap">
+	</script>
+	<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+
+	<script src="assets/js/maps.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
+
 </body>
 
 </html>
