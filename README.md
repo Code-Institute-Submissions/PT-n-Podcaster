@@ -117,80 +117,72 @@ View my wireframes <a href=" ">here.</a>
 ## Testing: 🔌
 
 Test Planning:
-I was very concerned with the functionality of my PT enquiry form, especially because it is this form which could potentially lose me a new client if the user felt dissatisfied with the functionality.
+I was very concerned with the functionality of my site and needed features such as my PT enquiry form, Podcast enquiry form and star rating to work seamlessly.
+Especially because these forms and features could potentially lose me a new client if the user felt dissatisfied with the functionality, or potential podcast sponsorship if my content isn't accessible. 
 
 Testing Stories:
-I continued to test the function throughout the process and quickly realised that whilst the code I had used from my template js email was correct, I had used slightly ineffective code in my email.js file and corresponding HTML, because every time i tried to use the function to test it, I would not receive an email and it would refresh my details every time. After an in-depth explanation from my tutor, i learnt that the 'onsubmit' action had built-in functions when if not accompanied by a return false action, meant that my code was being asked to send the form and refresh, virtually at the same time. Hence why I was not receiving the email and the form was refreshing details on every attempt.
+- I continued to test the forms' function throughout the process and quickly realised that whilst the code I had used from my template js email was correct, I had used slightly ineffective code in my email.js file and corresponding HTML, because every time I tried to use the function to test it, I would not receive an email and it would refresh my details every time. After an in-depth explanation from my mentor, I learnt that the 'onsubmit' action had built-in functions when if not accompanied by a return false action, meant that my code was being asked to send the form and refresh, virtually at the same time. Hence why I was not receiving the email and the form was refreshing details on every attempt.
 
 I fixed this issue, by using the source option in dev tools, to look at where the code became unresponsive and found that I had placed a comma in the wrong place too!
 
 After resolving these issues, I found that my PT enquiry form was working perfectly well!
+
+
+-  The filter function only seemed to work if the function was placed in the HTML and not the actual script.js file. Whilst this was not an issue, I felt that if I have got a specific js file then surely all the script should go in there! I tried to make it work whilst in the script file, but I kept getting a  'filterFunction is not defined' error.
+
+I fixed this issue after removing the function from the list of functions so that it was not inside my jQuery '$(document).ready(function() {}'.
+
+After resolving this issue, I found that my filter function was working perfectly well whilst IN my script.js.file!
+
+- The star rating became a nightmare for me, I was using so many 'for loops' and wanted to try and take a shortcut by using nested for loop with the j-- attribute! This meant that I became stuck in an infinite loop and my confidence with javascript as a whole plummeted. 
+
+I fixed the issue by talking through the loops as I wrote them and not allowing j=1 to scare me AND with the correct use of if and else statements!
+
+After resolving this issue, I found that my star rating was working responsively!
 
 Key aspects:
 Design -
 
 Plan 📝: One of my aims was for the cost of a personal training package to illuminate when the user hovers over the package.
 
-Implementation 🏭: I tried to initially do this in my CSS, however i could not target the correct elements effectively. I would have had to style quite a few 'a' elements and then 'a: hover' elements which would have in turn, meant that I would have had to target each specific 'a' element and making it individual would have been tough! I eventually, decided to use javascript and the 'mouseenter' and 'mouseleave' functions to add specific CSS and then remove it. Giving the appearance of a hover. I could also use 4 unique Id's on each PT page and only have to do the function for each id once within my script.js file because the ids were each on different pages.
+Implementation 🏭: I tried to initially do this in my CSS, however, I could not target the correct elements effectively. I would have had to style quite a few 'a' elements and then 'a: hover' elements which would have in turn, meant that I would have had to target each specific 'a' element and making it individual would have been tough! I eventually, decided to use javascript and the 'mouseenter' and 'mouseleave' functions to add specific CSS and then remove it. Giving the appearance of a hover. I could also use 4 unique Id's on each PT page and only have to do the function for each id once within my script.js file because the ids were each on different pages.
 
 Verdict ✅: It looks wonderful and I have the desired effect.
 
-search bar
 
-Plan 📝: I wanted my search bar function to filter out the topics that the user was not concerned with and assist them in finding the specific content they were looking for.
+Plan 📝: Radio buttons on podcast email so that after choosing which type of enquiry you had, a text area would appear. Without this approach, it was likely to look messy and contribute to bad user experience. 
 
-Bugs: 🐞
-Bugs During Development:
-It was tough to get support for this idea as most tutorials or guidance is made for people creating a search bar for content from another platform, which therefore has an existing API to draw from. I explored this option, however, it is a very long process and you have to be accepted by apple and then you are given the API, if they deem your site profitable enough to drive traffic back to them.
-Eventually, I found some guidance by way of a youtube tutorial and I was initially getting various function errors and then realised that the solution was, to solve this I had too,
-The search bar function was not working
+Bug 🕷: After clicking the radio button once it could not be unclicked, such is the design of radio buttons. Although, this made it very limiting for a potential user, if they mistakenly clicked an option, using javascript I had instructed the text area to appear, however, if they clicked another button another text area would appear and stick. 
 
-js email (PT)
+Fix 🔧: I solved this by switching my radio buttons to checkboxes. These are a lot more functional for my purpose. 
 
-Plan 📝: I wanted my email function to work effectively and seamlessly
+Verdict ✅: The desired effect has been achieved.
 
-Bugs: 🐞
-the email continued not to work and I realised that I hadn't listed the src and script in the correct place, I had placed it in the footer, as opposed to the header. Once corrected I was no longer getting the 'this function has not been called error' This meant I could find the more critical issue within the code.
-
-js email (Podcast)
-
-Plan 📝: After solving the PT email issue, I wanted the Podcast email to work just as seamlessly.
-
-Bugs: 🐞
-Bugs During Development:
-I followed the same steps to try and solve the issue as I did for the PT contact form. However this time, the issue lay within the names of my input values, to solve this I had too add new names for each of my inputs and resolve any other wrongly copied code, from the previous form.
-
-Error:
-
-Bug 🕷:
-radio buttons on podcast email
-Fix 🔧:
-
-Bug 🕷:
-sticky top nav bar on the index page
-
-Fix 🔧:
-
-Verdict ✅:
-Known Bugs:
+# Known Bugs:
 Here is a list of known bugs that exist on the site: ❌
 
-Future changes:
+- Sticky top class in the navbar is ineffective. 
+- When the site is viewed on a device smaller than a laptop the navbar options appear on the opposite side of the navbar burger button. 
+
+
+Features to implement in future changes:
 
 - I would like to eventually be deemed as a profitable option for apple to share their podcast API with and then apply this to my site and create a carousel of my recent podcast episodes.
 - I would like to have a chat now function, instead of just an email form.
 - I would like to have a Paypal link beneath the relevant forms so that people could pay for services as soon as they select the package they would like.
+- I would like to input a carousel which can update using a link to my various platform, specifically showing the upcoming projects/event that i am doing.
+- I would like to use local storage to keep the star ratings and reviews on the page. 
 
 ## Deployment: 🚀
 
 PT 'n' Podcaster was developed on GitPod, using git and GitHub to host the repository.
 
-When deploying The Therapy Practice using GitHub Pages the following steps were made:
+When deploying PT 'n' Podcaster using GitHub Pages the following steps were made:
 
 - Opened up <strong>GitHub</strong> in the browser.
 - Signed in using username and password.
 - Selected my <strong>repositories</strong>.
-- Navigated to <strong>'/mayasaffron/thetherapypractice'</strong>.
+- Navigated to <strong>'/mayasaffron/pt-n-Podcaster'</strong>.
 - In the top navigation clicked <strong>'settings'</strong>.
 - Scrolled down to the <strong>GitHub Pages</strong> area.
 - Selected <strong>'Master Branch'</strong> from the <strong>'Source'</strong> dropdown menu.
@@ -201,7 +193,7 @@ When deploying The Therapy Practice using GitHub Pages the following steps were 
 
 Cloning PT 'n' Podcaster from GitHub:
 
-- Navigate to <strong>'/mayasaffron/PT-n-Podcaster'</strong>.
+- Navigate to <strong>'/mayasaffron/pt-n-Podcaster'</strong>.
 - Click the green <strong>'Clone or Download'</strong> button.
 - Copy the <strong>url</strong> in the dropdown box.
 - Using your favourite <strong>IDE</strong> open up your preferred <strong>terminal</strong>.
@@ -223,5 +215,5 @@ Developing this project has encouraged me to think methodically and prioritise w
 
 - Used <a href="https://hatchful.shopify.com/your-logos"></a> To design my logo.
 - Used<a href="https://coolors.co/78e8b2-ff8552-dbd56e-f7b32b-f67e7d"></a> To source my colour scheme.
+- Used <a href="https://www.shutterstock.com/image-resizer"></a>To resize my iamges.
 
-#### Images
