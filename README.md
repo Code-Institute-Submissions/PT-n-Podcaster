@@ -1,6 +1,6 @@
 # PT'n' Podcaster
 
-<img src="assets/logos/logo.png">
+![](assets/logos/logo.png)
 
 Thank you for visiting my project. This website is a clear and concise projection of my career and passion. I am a female-only level 4 pre and postnatal Personal Trainer and I love podcasting. After founding and hosting the tried it podcast, I went on to launch Mayas minutes and guest on countless other podcasts. I use my social media pretty heavily, but when you are relying on a mass-produced algorithm you can never really portray the true essence of who you are and what you do, this website is me doing just that! _if you have any questions or suggestions head to my Github contact details._
 
@@ -75,7 +75,7 @@ I decided to base my logo around the colour purple and then allow this to help m
 
 ##### Fonts:
 
-I chose to use the fonts <a href="https://fonts.google.com/specimen/Lato?sidebar.open=true&selection.family=Lato"> Lato</a> and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Lato|Montserrat&query=montser">Montserrat</a>. After looking at other fitness/ wellness websites, I found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
+I chose to use the fonts <a href= <a href="https://fonts.googleapis.com/css?family=Roboto&display=swap">ROBERTO</a> After looking at other fitness/ wellness websites, I found the two fonts regularly appearing and realised that it was probably because they are easy to read and also have the scope to be pretty impactful.
 
 ##### Colours:
 
@@ -94,6 +94,7 @@ View my wireframes <a href=" ">here.</a>
 - search box for topics I've spoken on (podcast section)
 - Star rating and review box
 - Personal Training rates which illuminate on hover and return to the original background colour on mouse leave.
+- Scroll to top button.
 
 
 ## Technologies Used: 👨‍💻
@@ -103,6 +104,8 @@ View my wireframes <a href=" ">here.</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
 - <a href="https://www.w3schools.com/js/">JavaScript</a>
+- <a href="https://developers.google.com/maps/documentation/javascript/overview">Google Maps </a>
+- <a href="https://www.emailjs.com/"> Email Js </a>
 
 ### Tools & Libraries:
 
@@ -111,8 +114,10 @@ View my wireframes <a href=" ">here.</a>
 - <a href="https://git-scm.com/">Git</a>
 - <a href="https://getbootstrap.com/">Bootstrap</a>
 - <a href="https://fontawesome.com/icons?d=gallery">Font-Awesome</a>
-- <a href="https://validator.w3.org/">W3C Validation service was used to check HTML. </a>
-- <a href="https://jigsaw.w3.org/css-validator/">W3C Markup validation services used to check CSS.</a>
+- <a href="https://validator.w3.org/">W3C Validation service was used to check HTML. </a> 
+![](wireframes/htmlValidator.png)
+- <a href="https://jigsaw.w3.org/css-validator/">W3C Markup validation services used to check CSS.</a> 
+![](wireframes/cssValidator.png)
 
 ## Testing: 🔌
 
@@ -130,11 +135,11 @@ After resolving these issues, I found that my PT enquiry form was working perfec
 
 -  The filter function only seemed to work if the function was placed in the HTML and not the actual script.js file. Whilst this was not an issue, I felt that if I have got a specific js file then surely all the script should go in there! I tried to make it work whilst in the script file, but I kept getting a  'filterFunction is not defined' error.
 
-I fixed this issue after removing the function from the list of functions so that it was not inside my jQuery '$(document).ready(function() {}'.
+I fixed this issue after removing the function from the list of functions so that it was not inside my jQuery ```$(document).ready(function() {}```.
 
 After resolving this issue, I found that my filter function was working perfectly well whilst IN my script.js.file!
 
-- The star rating became a nightmare for me, I was using so many 'for loops' and wanted to try and take a shortcut by using nested for loop with the j-- attribute! This meant that I became stuck in an infinite loop and my confidence with javascript as a whole plummeted. 
+- The star rating became a nightmare for me, I was using so many 'for loops' and wanted to try and take a shortcut by using nested for loop with the ```j-- ``` JavaScript decrement! This meant that I became stuck in an infinite loop and my confidence with javascript as a whole plummeted. 
 
 I fixed the issue by talking through the loops as I wrote them and not allowing j=1 to scare me AND with the correct use of if and else statements!
 
@@ -161,14 +166,13 @@ Verdict ✅: The desired effect has been achieved.
 # Known Bugs:
 Here is a list of known bugs that exist on the site: ❌
 
-- Sticky top class in the navbar is ineffective. 
 - When the site is viewed on a device smaller than a laptop the navbar options appear on the opposite side of the navbar burger button. 
 - Star rating flickers slightly whilst hovering over stars.
 
 
 Features to implement in future changes:
 
-- I would like to eventually be deemed as a profitable option for apple to share their podcast API with and then apply this to my site and create a carousel of my recent podcast episodes.
+- I would like to eventually be deemed as a profitable option for apple to share their podcast API with and then apply this to my site and create a carousel of my recent podcast episodes. I could not have this as an option for this project, because in order to use the apple podcasts API to promote your podcast you have to apply to become an affiliate. ![](wireframes/appleAffiliate.png) ![](wireframes/appleApi.png). 
 - I would like to have a chat now function, instead of just an email form.
 - I would like to have a Paypal link beneath the relevant forms so that people could pay for services as soon as they select the package they would like.
 - I would like to input a carousel which can update using a link to my various platform, specifically showing the upcoming projects/event that i am doing.
@@ -205,6 +209,8 @@ Cloning PT 'n' Podcaster from GitHub:
  git clone https://github.com/mayasaffron/pt-n-podcaster
 ```
 
+# <a href="https://mayasaffron.github.io/PT-n-Podcaster/">Live site </a>
+
 ## Closing Notes:
 
 Developing this project has encouraged me to think methodically and prioritise what needs to be done, as opposed to the aesthetic changes that may seem more important! I have also employed much more independence when faced with issues which I'm sure is to do with the confidence I now have in my skills. I am really happy with the work I have produced.
@@ -214,7 +220,7 @@ Developing this project has encouraged me to think methodically and prioritise w
 
 #### Design
 
-- Used <a href="https://hatchful.shopify.com/your-logos"></a> To design my logo.
-- Used<a href="https://coolors.co/78e8b2-ff8552-dbd56e-f7b32b-f67e7d"></a> To source my colour scheme.
-- Used <a href="https://www.shutterstock.com/image-resizer"></a>To resize my iamges.
-
+- Used <a href="https://hatchful.shopify.com/your-logos">To design my logo.</a> 
+- Used<a href="https://coolors.co/78e8b2-ff8552-dbd56e-f7b32b-f67e7d">To source my colour scheme.</a> 
+- Used <a href="https://www.shutterstock.com/image-resizer">To resize my images.
+</a>
