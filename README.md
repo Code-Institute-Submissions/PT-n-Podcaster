@@ -117,6 +117,7 @@ View my wireframes <a href=" ">here.</a>
 ![](wireframes/htmlValidator.png)
 - <a href="https://jigsaw.w3.org/css-validator/">W3C Markup validation services used to check CSS.</a> 
 ![](wireframes/cssValidator.png)
+- <a href="https://jshint.com/">Js Hint Validation service. </a>
 
 ## Testing: 🔌
 
