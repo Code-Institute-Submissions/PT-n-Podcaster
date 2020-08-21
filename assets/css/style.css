@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100,200,300,400,500,600|Montserrat:wght@300&display=swap");
 
+
+html {
+  scroll-behavior: smooth;
+}
 /* nav bar */
 nav {
   height: 126px;
@@ -57,9 +61,7 @@ ul li a:hover {
   padding-top: 0px;
 }
 
-.sticky-top {
-  position: sticky;
-}
+
 
   .logo {
     height: 120px;
@@ -465,7 +467,34 @@ a:hover {
   background-color: #eee;
 }
 
+.fa-chevron-up{
+    color: black;
+}
 
+.toTop {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.toTop.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
 
 /* footer */
 footer {
