@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="icon" type="image/png" href="assets/logos/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
@@ -82,7 +83,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-6">
+			<div class="col-sm-12 col-md-6">
 				<div class="col-12">
 					<h2 class="heading">Locations</h2>
 				</div>
@@ -90,21 +91,20 @@
 					Click on the markers on the map to have a look at the locations I can train you.</p>
 			</div>
 
-			<div id="map" class="col-6">
-
-
+              
+			<div id="map" class="col-sm-12 col-md-6">
 			</div>
 		</div>
+	
 
 		<div class="row">
-			<div class="col-6 ptForm">
+			<div class="col-sm-12 col-md-6 ptForm">
 				<h2 class="heading"> PT form </h2>
 				<form onsubmit="sendPtFormMail(this); return false;">
 					<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
 					<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
 					<textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
-
-					<button type="submit" id="mailButton" class="btn btn-secondary center-block" data-toggle="modal"> Send PT Enquiry </button>
+                    <button type="submit" id="mailButton" class="btn mt-3 btn-secondary center-block" data-toggle="modal"> Send PT Enquiry </button>
 				</form>
 
 				<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -130,7 +130,7 @@
 
 			<!--Add payment option here and link to paypal -->
 
-			<div class="col-6 ptRates">
+			<div class="col-sm-12 col-md-6 ptRates">
 				<table class="table">
 					<thead>
 						<tr>
@@ -168,76 +168,62 @@
 		</div>
 	</div>
 
-	<footer class="container-fluid">
-		<div class="row">
-			<div class="col-4 col-xs-12">
-				<h5 class="uppercase">T's & C's</h5>
-
-				<button type="button" class="btn footer col-xs-12" data-toggle="modal" data-target="#termsBtn">
+		<footer class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<button type="button" class="btn" data-toggle="modal" data-target="#termsBtn">
 			  Terms & Conditions
 			</button>
-				<div class="modal fade" id="termsBtn" data-backdrop="static" data-keyboard="false" tabindex="-1"
-					aria-labelledby="termsBtn" aria-hidden="true">
-					<div id="modalInput" class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="termsBtn" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="termsBtn" aria-hidden="true">
+  <div id="modalInput" class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-							</div>
-							<div class="modal-body">
-								<p class="paragraph">
-									I have a strict 24 hour cancellation policy. If you would like to rearrange a
-									session, please give me a minimum
-									of 24 hours notice. If you do not comply with this rule, you will lose your session.
-									• Please pay your package total upfront, if this is not possible, you and I can
-									workout a payment plan. I will not
-									accept payment per session.
-									• If you purchase a package and cannot complete the sessions for any reason, I will
-									not refund payment of
-									unused sessions UNLESS there are extenuating circumstances. I will require proof,
-									for example a Doctors
-									note/ new work contract, stipulating a relocation. HOWEVER your sessions can be
-									frozen for up to 3 months.
-									*All decisions and approaches to moving forward in any of the above circumstances
-									are at my discretion.
-									• If you decide to go for an outdoor package, please understand that we will more
-									than likely experience bad
-									weather. If this will deter you from training this is not the right package for you.
-									I will not accept bad weather as
-									a reason for a cancelled session.
-									• Please come to every session with a pro-active attitude. If you cant do an
-									exercise, know that you are
-									struggling AT THE MOMENT but you WILL improve. </p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
-
-							</div>
+      </div>
+      <div class="modal-body">
+       <p class="paragraph">
+       I have a strict 24 hour cancellation policy. If you would like to rearrange a session, please give me a minimum
+of 24 hours notice. If you do not comply with this rule, you will lose your session.
+• Please pay your package total upfront, if this is not possible, you and I can workout a payment plan. I will not
+accept payment per session.
+• If you purchase a package and cannot complete the sessions for any reason, I will not refund payment of
+unused sessions UNLESS there are extenuating circumstances. I will require proof, for example a Doctors
+note/ new work contract, stipulating a relocation. HOWEVER your sessions can be frozen for up to 3 months.
+*All decisions and approaches to moving forward in any of the above circumstances are at my discretion.
+• If you decide to go for an outdoor package, please understand that we will more than likely experience bad
+weather. If this will deter you from training this is not the right package for you. I will not accept bad weather as
+a reason for a cancelled session.
+• Please come to every session with a pro-active attitude. If you cant do an exercise, know that you are
+struggling AT THE MOMENT but you WILL improve. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+			
+					
+			
+					<div class="col-sm-12 col-md-4">
+							<a href="https://www.instagram.com/mayasaffronhan/" target="_blank" class="footer"
+								aria-label="instagram">
+								<i class="fab fa-instagram socials"></i></a>
 						</div>
+			
+			
+					<div class="col-sm-12 col-md-4">
+							<a href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber" target="_blank"
+								class="footer" aria-label="youtube channel"><i class="socials fab fa-youtube"></i>
+							</a>
+                        
 					</div>
 				</div>
-			</div>
-
-
-
-			<div class="col-4 col-xs-12">
-				<h5 class="uppercase">Stay connected</h5>
-				<a href="https://www.instagram.com/mayasaffronhan/" target="_blank" class="footer"
-					aria-label="instagram">
-					<i class="fab fa-instagram"></i></a>
-			</div>
-
-
-			<div class="col-4 col-xs-12">
-				<h5 class="uppercase">Stay entertained</h5>
-				<a href="https://www.youtube.com/channel/UCLteueMzROHuwC1hNtj389g?view_as=subscriber" target="_blank"
-					class="footer" aria-label="youtube channel"><i class="fab fa-youtube"></i>
-				</a>
-
-			</div>
-		</div>
-	</footer>
+			</footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

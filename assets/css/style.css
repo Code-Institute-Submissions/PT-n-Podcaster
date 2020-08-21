@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100,200,300,400,500,600|Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600|Exo:100,200,300,400,500,600&display=swap');
 
+body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #39393A; 
+} 
 
 html {
   scroll-behavior: smooth;
 }
 /* nav bar */
+
 nav {
   height: 126px;
   width: 100%;
@@ -137,6 +144,7 @@ background-color: #edf2ef;
 
 #about a:hover {
 color: #aa96b7;
+text-decoration: none;
 }
 #about h1{
     padding: 1rem;
@@ -177,6 +185,10 @@ color: #aa96b7;
 #virtualTraining a:hover{
     
      color: #4A4930;
+}
+
+.remoteContainer{
+padding: 3rem 0rem 0rem 2rem;
 }
 .remoteExercise {
   margin: auto;
@@ -252,75 +264,76 @@ width: 600px;
   padding: 1rem 0 1rem 0;
 }
 
-#faq a {
-  color: black;
-}
-
-#faq a:hover {
-  background-color: yellow;
-  text-decoration: none;
-}
 
 
 /* heading and paragraph classes */
-
+p{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+   
+}
 .title {
-  font-family: "lato";
-  font-size: 60px;
-  font-weight: 400;
   text-align: center;
+    font-family: "Exo",sans-serif;
+    font-size: 32px;
+  font-weight: 400;
+  padding-top: 1rem;
 }
 
 .special-head {
-  font-family: "lato";
+  
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
-
+  font-size: 24px;
+    font-family: "Exo",sans-serif;
   font-weight: 100;
 }
 
 .heading {
-  font-family: "lato";
-  font-size: 28px;
-  font-weight: 400;
+    font-family: "Exo",sans-serif;
+     font-weight: 500;  
+    font-size: 28px;
+    padding-top: 2rem;
 }
 .uppercase {
-  text-transform: uppercase;
-  font-family: "lato";
-  font-size: 20px;
-  font-weight: 200;
+text-transform: uppercase;
+font-family: "Exo",sans-serif;
+font-size: 20px;
+font-weight: 200;
 }
 .paragraph {
-  font-family: "montserrat";
+  font-family: "Roboto",sans-serif;
   font-size: 25px;
   font-weight: 300;
   padding: 1rem 1rem;
 }
 
 .special-para {
-  font-family: "montserrat";
-  font-size: 15px;
-  font-weight: 100;
+  font-family: "Roboto",sans-serif;
+  font-size: 25px;
+  font-weight: 200;
   text-align: center;
 }
 
 .revealText {
-  font-family: "montserrat";
+ font-family: "Roboto",sans-serif;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
   display: none;
   margin: 0;
+  text-align: left;
 }
 .blockquote{
     padding: 1rem ;
+    font-family: "Roboto",sans-serif;
 }
 .blockquote-footer {
-  color: black;
+  color:#39393A;
 }
 
 h3{
     padding-top: 1rem;
+    font-family: "Roboto",sans-serif;
 }
 
 hr{
@@ -333,9 +346,24 @@ hr{
 
 .terms{
     color: #BF4E30;
-    background-color: #fafafa;
-    border-color: #fafafa;
-    padding: 0rem 1rem 0rem 1rem;
+    background-color: #3A4E48;
+    padding: .5rem 1rem .5rem 1rem;
+
+}
+
+.terms:hover{
+  color: #fafafa;  
+}
+
+#reviewBtn {
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: #3A4E48;
+  color: #BF4E30;
+  border: none;
+}
+#reviewBtn:hover{
+    color: #fafafa;
 }
 
 /* features */
@@ -343,8 +371,9 @@ hr{
 #map {
   position: relative;
   height: 300px;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 2rem 0rem 1rem 0rem;
 }
+
 
 a {
     color: black;
@@ -358,7 +387,6 @@ a:hover {
 
 .modal-body {
     position: relative;
-    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1rem;
   background-color: #BF4E30;
@@ -370,11 +398,14 @@ a:hover {
     color: #fafafa; 
 }
 
+.ptRates{
+  padding:3rem .5rem .8rem 2rem;
+}
 
 .ptRates .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #39393A;
 }
 
 .table th {
@@ -394,7 +425,6 @@ a:hover {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
   border: 2px solid black;
  
 }
@@ -415,11 +445,11 @@ a:hover {
 }
 
 .checked {
-  color: orange;
+  color: #BF4E30;
 }
 
 .isClicked{
-  color: orange;  
+  color: #BF4E30;  
 }
 .reviews {
   font-size: 40px;
@@ -428,15 +458,22 @@ a:hover {
 
 #comment {
   margin-top: 5px;
+  font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#reviewText {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #BF4E30;
+  font-size: 20px;
 }
 
 #reviewBox {
   margin-top: 5px;
 }
-#reviewBtn {
-  margin-top: 10px;
-  margin-left: 5px;
-}
+
 
 #searchBar {
   width: 100%;
@@ -468,11 +505,11 @@ a:hover {
 }
 
 .fa-chevron-up{
-    color: black;
+    color: #39393A;
 }
 
 .toTop {
-  background: white;
+  background: #cac9ae;
   position: fixed;
   bottom: 16px;
   right:32px;
@@ -483,7 +520,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   font-size:32px;
-  color:#1f1f1f;
+  color:#39393A;
   text-decoration: none;
   opacity:0;
   pointer-events: none;
@@ -492,26 +529,34 @@ a:hover {
 
 .toTop.active {
   bottom:32px;
-  pointer-events: auto;
   opacity:1;
+  pointer-events: auto;
+  text-decoration: none;
 }
 
 /* footer */
 footer {
    background-color: #aa96b7;
-  color: black
+  color: #39393A;
+    padding: 1rem;
 }
 
-footer a {
-   color: black;
 
+footer a {
+   color: #39393A;
   cursor: pointer;
 }
 
 footer a:hover {
   color:#cac9ae;
-  
   background-color: transparent;
+}
+
+footer .btn{
+    padding-bottom: 1rem;
+      text-align: center;
+    width:100%;
+    padding-top: 2rem;
 }
 
 footer .btn:focus {
@@ -519,15 +564,11 @@ footer .btn:focus {
     box-shadow: 0 0 0 0.2rem #cac9ae;
 }
 
-footer h5{
-    padding: 1rem;
+.socials{
+    text-align: center;
+    width:100%;
+    height:70px;
+padding-top: 2rem;
+padding-bottom: 1rem;
 }
 
-@media (max-width:530px) {
-h5 {
-    display: none;
-}
-.ptOptions h2{
-  display: none;  
-}
-}

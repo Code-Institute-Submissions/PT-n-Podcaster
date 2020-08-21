@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="icon" type="image/png" href="assets/logos/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
@@ -94,7 +95,7 @@
 <h1 class="title"> Training virtually </h1>
 </div>
 
-<div class="col-6">
+<div class="col-sm-12 col-md-6">
 <div class="col-12">
 <h2 class="heading"> How it works </h2>
 </div>
@@ -102,7 +103,7 @@
 </div>
 
 
-<div class="col-6 remoteContainer">
+<div class="col-sm-12 col-md-6 remoteContainer">
 <img src="assets/img/remoteWorkout.JPG" alt="remote exercise" class="remoteExercise img-fluid">
 <div class="text-Container">
               <p class="revealText remote">
@@ -116,14 +117,14 @@
 
 
 <div class="row">
-<div class="col-6 ptForm">
+<div class="col-sm-12 col-md-6 ptForm">
     <h2 class="heading"> PT form </h2>
    <form onsubmit="sendPtFormMail(this); return false;">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="PT Enquiry" required></textarea>
 
-                    <button type="submit" id="mailButton" class="btn btn-secondary center-block" data-toggle="modal"> Send PT Enquiry </button>
+                    <button type="submit" id="mailButton" class="btn btn-secondary mt-3 center-block" data-toggle="modal"> Send PT Enquiry </button>
                 </form>
 
 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -147,9 +148,9 @@
   </div>
 
  
- <!--Add payment option here and link to paypal -->
 
-<div class="col-6 ptRates">
+
+<div class="col-sm-12 col-md-6 ptRates">
 <table class="table">
   <thead>
     <tr>
