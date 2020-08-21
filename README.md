@@ -89,7 +89,6 @@ View my wireframes <a href=" ">here.</a>
 ## Features: 🎡
 
 - Map with markers
-- Interactive Contact form (#contact)
 - Interactive animations (Outdoor in-home and virtual training on index.html)
 - search box for topics I've spoken on (podcast section)
 - Star rating and review box
@@ -217,6 +216,8 @@ Developing this project has encouraged me to think methodically and prioritise w
 ## Credits: 💳
 
 #### Project Structure
+- Used <a href="https://www.youtube.com/watch?v=SJVCvnKM_lI">To create my back to top scroller. </a> 
+- Used <a href="https://www.w3schools.com/howto/howto_js_filter_lists.asp">To create my filter search box. </a>
 
 #### Design
 

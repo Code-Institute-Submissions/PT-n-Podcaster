@@ -43,13 +43,15 @@ $(document).ready(function() {
             for (let j=1; j<=i; j++){
                 starRating[j].classList.add("checked");
             }
-        })
+        });
+      
 starRating[i].addEventListener("mouseleave",function(){
 // console.log(starRating[i]);
             for (let j=1; j<=starRating.length; j++){
                 starRating[j].classList.remove("checked");
             }
-        })
+        });
+      
     starRating[i].addEventListener("click",function(){
 // console.log(starRating[i]);
             for (let j=1; j<=starRating.length; j++){
@@ -61,7 +63,7 @@ starRating[i].addEventListener("mouseleave",function(){
                 }
             
             }
-        })
+        });
     
     }
   //index.html-podcast section, podcast review
@@ -98,7 +100,7 @@ const input = document.querySelector("#comment");
     function filterFunction() {
     let input, filter, div, a, i;
     input = document.getElementById("searchBar");
-    console.log()
+    
     filter= input.value.toLowerCase();
     div = document.getElementById("buzzTopics");
     a = document.getElementsByTagName("a");
@@ -111,7 +113,7 @@ const input = document.querySelector("#comment");
     }
 }
 
-};
+}
 
 //footer, modal button for terms (not working)
 
